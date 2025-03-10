@@ -16,7 +16,7 @@ import {
 import { motion } from 'framer-motion';
 import { useToast } from '@/hooks/use-toast';
 
-// Sample data
+
 const trainers = [
   {
     id: 1,
@@ -97,7 +97,7 @@ const Trainers = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const { toast } = useToast();
   
-  // Filter trainers based on search term
+  
   const filteredTrainers = trainers.filter(trainer => 
     trainer.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     trainer.specialty.toLowerCase().includes(searchTerm.toLowerCase()) ||
