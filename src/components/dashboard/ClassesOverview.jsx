@@ -22,9 +22,9 @@ const ClassesOverview = () => {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white/10 backdrop-blur-md text-white p-2 border border-white/20 rounded-md shadow-md text-sm">
-          <p className="font-medium">{payload[0].name}</p>
-          <p className="font-bold">{payload[0].value}%</p>
+        <div className="bg-gym-purpleCard/90 p-3 text-sm rounded-md border border-gym-purpleLight/30 shadow-md">
+          <p className="font-medium text-white">{payload[0].name}</p>
+          <p className="font-bold text-gym-purpleHighlight">{payload[0].value}%</p>
         </div>
       );
     }
@@ -33,7 +33,7 @@ const ClassesOverview = () => {
 
   return (
     <div className="chart-container">
-      <h3 className="text-lg font-semibold mb-2">Popular Classes</h3>
+      <h3 className="text-lg font-semibold mb-2 text-white">Popular Classes</h3>
       <div className="h-64">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
@@ -65,13 +65,13 @@ const ClassesOverview = () => {
               iconSize={10}
               iconType="circle"
               formatter={(value) => (
-                <span className="text-xs font-medium">{value}</span>
+                <span className="text-xs font-medium text-white/80">{value}</span>
               )}
             />
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <div className="mt-2 text-sm text-muted-foreground text-center">
+      <div className="mt-2 text-sm text-white/60 text-center">
         Based on member attendance
       </div>
     </div>

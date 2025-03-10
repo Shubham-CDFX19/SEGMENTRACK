@@ -43,10 +43,10 @@ const classes = [
 
 const UpcomingClasses = () => {
   return (
-    <div className="bg-white dark:bg-card rounded-xl shadow-md p-5">
+    <div className="bg-card rounded-xl shadow-md p-5">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">Upcoming Classes</h3>
-        <a href="/classes" className="text-sm text-gym-blue hover:underline">
+        <a href="/classes" className="text-sm text-gym-purpleHighlight hover:underline">
           View all
         </a>
       </div>
@@ -58,11 +58,11 @@ const UpcomingClasses = () => {
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.1, duration: 0.3 }}
-            className="flex items-center justify-between rounded-lg border border-border p-3 hover:bg-muted/50 transition-colors"
+            className="flex items-center justify-between rounded-lg border border-gym-purpleLight/20 p-3 hover:bg-gym-purpleDark/50 transition-colors"
           >
             <div>
-              <h4 className="font-medium">{cls.name}</h4>
-              <div className="mt-1 flex items-center text-sm text-muted-foreground gap-3">
+              <h4 className="font-medium text-white">{cls.name}</h4>
+              <div className="mt-1 flex items-center text-sm text-white/70 gap-3">
                 <div className="flex items-center gap-1">
                   <Clock className="h-3.5 w-3.5" />
                   <span>{cls.time}</span>
@@ -72,27 +72,27 @@ const UpcomingClasses = () => {
                   <span>{cls.date}</span>
                 </div>
               </div>
-              <p className="text-sm mt-1">Trainer: {cls.trainer}</p>
+              <p className="text-sm mt-1 text-white/80">Trainer: {cls.trainer}</p>
             </div>
             
             <div className="flex flex-col items-end">
-              <div className="flex items-center gap-1 text-sm mb-1">
+              <div className="flex items-center gap-1 text-sm mb-1 text-white/80">
                 <Users className="h-3.5 w-3.5" />
                 <span>
                   {cls.participants}/{cls.maxParticipants}
                 </span>
               </div>
-              <div className="w-20 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+              <div className="w-20 h-1.5 bg-gym-purpleDark rounded-full overflow-hidden">
                 <div 
                   className={`h-full rounded-full ${
                     cls.participants === cls.maxParticipants 
                       ? 'bg-gym-red' 
-                      : 'bg-gym-green'
+                      : 'bg-gym-purpleHighlight'
                   }`}
                   style={{ width: `${(cls.participants / cls.maxParticipants) * 100}%` }}
                 />
               </div>
-              <span className="text-xs mt-1 text-muted-foreground">
+              <span className="text-xs mt-1 text-white/70">
                 {cls.participants === cls.maxParticipants ? 'Full' : 'Available'}
               </span>
             </div>

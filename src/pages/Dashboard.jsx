@@ -2,10 +2,13 @@
 import { motion } from 'framer-motion';
 import { 
   Users, 
+  Dumbbell, 
+  Timer,
+  Award,
   Calendar, 
-  DollarSign, 
+  Activity,
+  TrendingUp,
   BarChart3,
-  Dumbbell,
   AlertTriangle,
   Shield,
   Smartphone,
@@ -31,36 +34,36 @@ const Dashboard = () => {
       {/* Stats row */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <StatCard 
-          title="High-risk events" 
-          value="29" 
-          subtitle="57% total"
-          icon={AlertTriangle}
-          color="purple"
-          percent={57}
-        />
-        <StatCard 
-          title="Risky activities" 
-          value="08" 
-          subtitle="32% total"
-          icon={Shield}
-          color="blue"
-          percent={32}
-        />
-        <StatCard 
-          title="High-risk User" 
-          value="06" 
-          subtitle="17% total"
+          title="Active Members" 
+          value="254" 
+          subtitle="↑ 12% increase"
           icon={Users}
-          color="pink"
-          percent={17}
+          color="purple"
+          percent={75}
         />
         <StatCard 
-          title="Devices with issues" 
-          value="01" 
-          subtitle="3% total"
-          icon={Smartphone}
+          title="Weekly Workouts" 
+          value="189" 
+          subtitle="↑ 8% increase"
+          icon={Dumbbell}
+          color="blue"
+          percent={69}
+        />
+        <StatCard 
+          title="Class Attendance" 
+          value="86%" 
+          subtitle="↑ 5% increase"
+          icon={Timer}
+          color="pink"
+          percent={86}
+        />
+        <StatCard 
+          title="Member Retention" 
+          value="92%" 
+          subtitle="↑ 3% increase"
+          icon={Award}
           color="cyan"
-          percent={3}
+          percent={92}
         />
       </div>
       
@@ -68,7 +71,7 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* Left section - 2/3 width */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Files in time chart */}
+          {/* Monthly Revenue chart */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,15 +79,15 @@ const Dashboard = () => {
             className="bg-card rounded-xl p-5"
           >
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg font-medium">Files in time</h3>
-              <p className="text-sm font-medium text-blue-500">$3,900</p>
+              <h3 className="text-lg font-medium">Monthly Revenue</h3>
+              <p className="text-sm font-medium text-blue-500">$28,500</p>
             </div>
             <div className="h-72">
               <RevenueChart />
             </div>
           </motion.div>
           
-          {/* Two columns for Learn and Report */}
+          {/* Two columns for Fitness Programs and Workout Stats */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -93,35 +96,35 @@ const Dashboard = () => {
               className="bg-card rounded-xl p-5"
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-medium">Learn to use SynergyGym</h3>
+                <h3 className="text-lg font-medium">Fitness Programs</h3>
                 <button>
                   <MoreVertical size={16} />
                 </button>
               </div>
               
-              {/* Learning sections */}
+              {/* Programs sections */}
               <div className="space-y-3">
                 <div className="border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                   <div className="flex justify-between items-center">
-                    <p className="text-sm font-medium">What are your fitness goals?</p>
+                    <p className="text-sm font-medium">Weight Loss Challenge</p>
                     <ChevronRight size={16} />
                   </div>
                 </div>
                 <div className="border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                   <div className="flex justify-between items-center">
-                    <p className="text-sm font-medium">Building consistent workouts</p>
+                    <p className="text-sm font-medium">Strength Training</p>
                     <ChevronRight size={16} />
                   </div>
                 </div>
                 <div className="border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                   <div className="flex justify-between items-center">
-                    <p className="text-sm font-medium">Optimize training plans</p>
+                    <p className="text-sm font-medium">HIIT Cardio</p>
                     <ChevronRight size={16} />
                   </div>
                 </div>
                 <div className="border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                   <div className="flex justify-between items-center">
-                    <p className="text-sm font-medium">Maximizing recovery sessions</p>
+                    <p className="text-sm font-medium">Yoga & Flexibility</p>
                     <ChevronRight size={16} />
                   </div>
                 </div>
@@ -135,7 +138,7 @@ const Dashboard = () => {
               className="bg-card rounded-xl p-5"
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-medium">Get one-time report</h3>
+                <h3 className="text-lg font-medium">Member Activity</h3>
                 <button>
                   <MoreVertical size={16} />
                 </button>
@@ -172,7 +175,7 @@ const Dashboard = () => {
             className="bg-card rounded-xl p-5"
           >
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg font-medium">Environment settings</h3>
+              <h3 className="text-lg font-medium">Gym Performance</h3>
               <button>
                 <MoreVertical size={16} />
               </button>
@@ -182,8 +185,8 @@ const Dashboard = () => {
               <div className="group border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm font-medium">Email notifications</p>
-                    <p className="text-xs text-white/60 mt-1">Receive email notifications for daily events to be informed.</p>
+                    <p className="text-sm font-medium">Peak Hours</p>
+                    <p className="text-xs text-white/60 mt-1">5:00 PM - 8:00 PM is your busiest time with 78 members on average.</p>
                   </div>
                   <ChevronRight size={16} className="text-white/60 group-hover:text-white" />
                 </div>
@@ -192,8 +195,8 @@ const Dashboard = () => {
               <div className="group border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm font-medium">Devices with issues</p>
-                    <p className="text-xs text-white/60 mt-1">41 devices with biometric no devices to fingerprint full version of events.</p>
+                    <p className="text-sm font-medium">Equipment Usage</p>
+                    <p className="text-xs text-white/60 mt-1">Cardio machines are used 32% more than weight equipment this month.</p>
                   </div>
                   <ChevronRight size={16} className="text-white/60 group-hover:text-white" />
                 </div>
@@ -202,8 +205,8 @@ const Dashboard = () => {
               <div className="group border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm font-medium">Investigations</p>
-                    <p className="text-xs text-white/60 mt-1">Leverage investigations to faster discover and evaluate potential types of events.</p>
+                    <p className="text-sm font-medium">Membership Growth</p>
+                    <p className="text-xs text-white/60 mt-1">New memberships increased by 15% compared to last month.</p>
                   </div>
                   <ChevronRight size={16} className="text-white/60 group-hover:text-white" />
                 </div>
@@ -212,8 +215,8 @@ const Dashboard = () => {
               <div className="group border border-gym-purple/20 rounded-lg p-3 hover:bg-gym-purple/10 transition-colors cursor-pointer">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm font-medium">Reporting</p>
-                    <p className="text-xs text-white/60 mt-1">Activate the weekly report to monitor user activities and increase security measures.</p>
+                    <p className="text-sm font-medium">Personal Training</p>
+                    <p className="text-xs text-white/60 mt-1">42 members booked personal training sessions this week.</p>
                   </div>
                   <ChevronRight size={16} className="text-white/60 group-hover:text-white" />
                 </div>

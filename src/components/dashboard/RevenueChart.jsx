@@ -31,9 +31,9 @@ const RevenueChart = () => {
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white/10 backdrop-blur-md p-3 text-sm rounded-lg border border-white/20 shadow-lg">
-          <p className="font-medium">{label}</p>
-          <p className="text-blue-400 font-bold mt-1">
+        <div className="bg-gym-purpleCard/90 p-3 text-sm rounded-lg border border-gym-purpleLight/30 shadow-lg">
+          <p className="font-medium text-white">{label}</p>
+          <p className="text-gym-purpleHighlight font-bold mt-1">
             ${payload[0].value.toLocaleString()}
           </p>
         </div>
@@ -47,15 +47,15 @@ const RevenueChart = () => {
       <AreaChart data={data} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
         <defs>
           <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.5} />
-            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+            <stop offset="5%" stopColor="#755FE2" stopOpacity={0.5} />
+            <stop offset="95%" stopColor="#755FE2" stopOpacity={0} />
           </linearGradient>
         </defs>
         <XAxis 
           dataKey="month" 
           axisLine={false} 
           tickLine={false}
-          tick={{ fontSize: 10, fill: "#718096" }}
+          tick={{ fontSize: 10, fill: "#A795FF" }}
         />
         <YAxis 
           hide={true}
@@ -64,11 +64,11 @@ const RevenueChart = () => {
         <Area 
           type="monotone" 
           dataKey="revenue" 
-          stroke="#8884d8" 
+          stroke="#755FE2" 
           fillOpacity={1} 
           fill={`url(#${gradientId})`}
           strokeWidth={2}
-          activeDot={{ r: 6, strokeWidth: 0 }}
+          activeDot={{ r: 6, strokeWidth: 0, fill: "#A795FF" }}
         />
       </AreaChart>
     </ResponsiveContainer>
