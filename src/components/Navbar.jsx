@@ -50,6 +50,7 @@ const Navbar = () => {
               </div>
             </form>
           </div>
+          
           <div className="flex items-center gap-4">
             <button
               className="rounded-full p-2 hover:bg-gym-purple/20 transition-colors"
@@ -57,6 +58,7 @@ const Navbar = () => {
             >
               {isDark ? <Sun className="h-5 w-5 text-gym-cyan" /> : <Moon className="h-5 w-5" />}
             </button>
+            
             <button
               className="rounded-full p-2 hover:bg-gym-purple/20 transition-colors relative"
               onClick={() => {
@@ -70,6 +72,20 @@ const Navbar = () => {
               <span className="absolute -top-0.5 -right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-gym-pink text-[10px] font-medium text-white">
                 3
               </span>
+            </button>
+            
+            <div className="flex items-center gap-2">
+              <div className="h-8 w-8 rounded-full bg-indigo-600 flex items-center justify-center">
+                <span className="text-xs font-medium text-white">RD</span>
+              </div>
+              <div className="hidden md:block">
+                <p className="text-sm font-medium">Robert</p>
+                <p className="text-xs text-muted-foreground">Admin</p>
+              </div>
+            </div>
+            
+            <button className="hidden md:block ml-2 text-xs font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-md">
+              Add Policy
             </button>
           </div>
         </div>

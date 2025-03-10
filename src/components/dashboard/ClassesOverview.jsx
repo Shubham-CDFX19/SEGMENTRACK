@@ -9,11 +9,11 @@ import {
 } from 'recharts';
 
 const data = [
-  { name: 'HIIT', value: 35, color: '#E63946' },
-  { name: 'Yoga', value: 25, color: '#457B9D' },
-  { name: 'Weight Training', value: 20, color: '#4CAF50' },
-  { name: 'Cardio', value: 15, color: '#FF9800' },
-  { name: 'Pilates', value: 5, color: '#9C27B0' },
+  { name: 'HIIT', value: 35, color: '#FF26B9' },
+  { name: 'Yoga', value: 25, color: '#26C6FF' },
+  { name: 'Weight Training', value: 20, color: '#7C4DFF' },
+  { name: 'Cardio', value: 15, color: '#42FFEC' },
+  { name: 'Pilates', value: 5, color: '#FF4D94' },
 ];
 
 const COLORS = data.map(item => item.color);
@@ -22,7 +22,7 @@ const ClassesOverview = () => {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white p-2 border rounded-md shadow-md text-sm">
+        <div className="bg-white/10 backdrop-blur-md text-white p-2 border border-white/20 rounded-md shadow-md text-sm">
           <p className="font-medium">{payload[0].name}</p>
           <p className="font-bold">{payload[0].value}%</p>
         </div>

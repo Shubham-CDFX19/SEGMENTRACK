@@ -1,7 +1,8 @@
 
+import { useState } from 'react';
 import {
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -25,19 +26,14 @@ const data = [
 ];
 
 const RevenueChart = () => {
-  const formatYAxis = (value) => {
-    if (value >= 1000) {
-      return `$${value / 1000}k`;
-    }
-    return `$${value}`;
-  };
+  const gradientId = "colorRevenue";
   
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="glassmorphism p-3 text-sm">
+        <div className="bg-white/10 backdrop-blur-md p-3 text-sm rounded-lg border border-white/20 shadow-lg">
           <p className="font-medium">{label}</p>
-          <p className="text-gym-green font-bold mt-1">
+          <p className="text-blue-400 font-bold mt-1">
             ${payload[0].value.toLocaleString()}
           </p>
         </div>
@@ -47,41 +43,35 @@ const RevenueChart = () => {
   };
 
   return (
-    <div className="chart-container">
-      <div className="flex justify-between items-center mb-4">
-        <h3 className="text-lg font-semibold">Revenue Overview</h3>
-        <span className="text-sm text-gym-green font-medium">+15% yearly growth</span>
-      </div>
-      <div className="h-72">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            <XAxis
-              dataKey="month"
-              axisLine={false}
-              tickLine={false}
-              tick={{ fontSize: 12 }}
-            />
-            <YAxis
-              axisLine={false}
-              tickLine={false}
-              tick={{ fontSize: 12 }}
-              tickFormatter={formatYAxis}
-            />
-            <Tooltip content={<CustomTooltip />} />
-            <Line
-              type="monotone"
-              dataKey="revenue"
-              stroke="#4CAF50"
-              strokeWidth={3}
-              dot={{ r: 0 }}
-              activeDot={{ r: 6, strokeWidth: 0 }}
-              animationDuration={2000}
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-    </div>
+    <ResponsiveContainer width="100%" height="100%">
+      <AreaChart data={data} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
+        <defs>
+          <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.5} />
+            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        <XAxis 
+          dataKey="month" 
+          axisLine={false} 
+          tickLine={false}
+          tick={{ fontSize: 10, fill: "#718096" }}
+        />
+        <YAxis 
+          hide={true}
+        />
+        <Tooltip content={<CustomTooltip />} />
+        <Area 
+          type="monotone" 
+          dataKey="revenue" 
+          stroke="#8884d8" 
+          fillOpacity={1} 
+          fill={`url(#${gradientId})`}
+          strokeWidth={2}
+          activeDot={{ r: 6, strokeWidth: 0 }}
+        />
+      </AreaChart>
+    </ResponsiveContainer>
   );
 };
 
