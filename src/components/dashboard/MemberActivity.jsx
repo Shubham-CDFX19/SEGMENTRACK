@@ -20,14 +20,14 @@ const MemberActivity = () => {
       <AreaChart data={data} margin={{ top: 5, right: 0, left: 0, bottom: 5 }}>
         <defs>
           <linearGradient id="colorActivity" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#FF26B9" stopOpacity={0.5} />
-            <stop offset="95%" stopColor="#FF26B9" stopOpacity={0} />
+            <stop offset="5%" stopColor="#755FE2" stopOpacity={0.5} />
+            <stop offset="95%" stopColor="#755FE2" stopOpacity={0} />
           </linearGradient>
         </defs>
         <Area 
           type="monotone" 
           dataKey="visits" 
-          stroke="#FF26B9" 
+          stroke="#755FE2" 
           fillOpacity={1}
           fill="url(#colorActivity)"
           strokeWidth={2}

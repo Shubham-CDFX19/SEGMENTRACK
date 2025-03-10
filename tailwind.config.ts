@@ -79,7 +79,17 @@ export default {
 					neonpurple: "#7C4DFF",
 					dark: "#070527",
 					darker: "#050420",
-					light: "#F1FAEE"
+					light: "#F1FAEE",
+					// New colors based on image
+					purpleBase: "#372D5A",
+					purpleDark: "#2D244E",
+					purpleDeep: "#1F1736",
+					purpleLight: "#5A4C8E",
+					purpleSidebar: "#201837",
+					purpleCard: "#2B2144",
+					purpleHighlight: "#A795FF",
+					purpleProgress: "#755FE2",
+					blueAccent: "#4093FF"
 				}
 			},
 			borderRadius: {

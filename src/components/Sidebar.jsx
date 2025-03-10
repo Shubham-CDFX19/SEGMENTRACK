@@ -7,7 +7,6 @@ import {
   Calendar, 
   DollarSign, 
   Dumbbell, 
-  Settings, 
   Menu, 
   X,
   LogOut,
@@ -30,24 +29,23 @@ const Sidebar = () => {
     { name: 'Classes', path: '/classes', icon: Calendar },
     { name: 'Analytics', path: '/analytics', icon: BarChart3 },
     { name: 'Finances', path: '/finances', icon: DollarSign },
-    { name: 'Settings', path: '/settings', icon: Settings },
   ];
 
   return (
-    <div className={`h-screen ${collapsed ? 'w-20' : 'w-64'} bg-gym-darkpurple fixed left-0 top-0 z-10 transition-all duration-300 ease-in-out`}>
+    <div className={`h-screen ${collapsed ? 'w-20' : 'w-64'} bg-gym-purpleSidebar fixed left-0 top-0 z-10 transition-all duration-300 ease-in-out`}>
       <div className="flex h-full flex-col">
         {/* Sidebar header */}
-        <div className="flex items-center justify-between p-4 border-b border-gym-purple/20">
+        <div className="flex items-center justify-between p-4 border-b border-gym-purpleLight/20">
           {!collapsed && (
             <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-neonpink">
+              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-purpleProgress">
                 <Dumbbell className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-bold text-white">SynergyGym</span>
             </Link>
           )}
           {collapsed && (
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-neonpink mx-auto">
+            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-purpleProgress mx-auto">
               <Dumbbell className="h-5 w-5 text-white" />
             </div>
           )}
@@ -66,7 +64,7 @@ const Sidebar = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-full bg-gym-indigo/50 text-white text-sm rounded-md border border-gym-purple/20 px-3 py-2 pl-8 focus:outline-none focus:ring-1 focus:ring-gym-purple/50"
+                className="w-full bg-gym-purpleDeep text-white text-sm rounded-full border border-gym-purpleLight/20 px-3 py-2 pl-8 focus:outline-none focus:ring-1 focus:ring-gym-purpleLight/50"
               />
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +97,7 @@ const Sidebar = () => {
                   } animate-fade-in`}
                   style={{ animationDelay: `${navigationItems.indexOf(item) * 0.05}s` }}
                 >
-                  <item.icon className={`h-5 w-5 ${isActive ? 'text-gym-cyan' : 'text-gray-400'}`} />
+                  <item.icon className={`h-5 w-5 ${isActive ? 'text-gym-purpleHighlight' : 'text-gray-400'}`} />
                   {!collapsed && <span>{item.name}</span>}
                 </Link>
               );
@@ -139,11 +137,11 @@ const Sidebar = () => {
         </div>
 
         {/* Sidebar footer */}
-        <div className="border-t border-gym-purple/20 p-4">
+        <div className="border-t border-gym-purpleLight/20 p-4">
           <div className={`flex ${collapsed ? 'justify-center' : 'items-center'} gap-3`}>
             {!collapsed && (
               <>
-                <div className="h-8 w-8 rounded-full bg-gym-neonpurple flex items-center justify-center text-white font-medium">
+                <div className="h-8 w-8 rounded-full bg-gym-purpleProgress flex items-center justify-center text-white font-medium">
                   A
                 </div>
                 <div className="flex-1">
@@ -154,7 +152,7 @@ const Sidebar = () => {
               </>
             )}
             {collapsed && (
-              <div className="h-8 w-8 rounded-full bg-gym-neonpurple flex items-center justify-center text-white font-medium">
+              <div className="h-8 w-8 rounded-full bg-gym-purpleProgress flex items-center justify-center text-white font-medium">
                 A
               </div>
             )}

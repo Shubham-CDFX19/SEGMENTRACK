@@ -5,74 +5,44 @@
 
 @layer base {
   :root {
-    --background: 249 70% 5%;
+    --background: 260 40% 17%;
     --foreground: 210 40% 98%;
 
-    --card: 250 70% 7%;
+    --card: 260 45% 20%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 250 70% 5%;
+    --popover: 260 40% 17%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 270 75% 60%;
+    --primary: 260 45% 50%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 250 70% 12%;
+    --secondary: 260 40% 25%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 250 70% 12%;
+    --muted: 260 40% 25%;
     --muted-foreground: 240 5% 75%;
 
-    --accent: 270 75% 60%;
+    --accent: 260 45% 50%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 80% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 250 70% 12%;
-    --input: 250 70% 12%;
-    --ring: 270 75% 60%;
+    --border: 260 40% 25%;
+    --input: 260 40% 25%;
+    --ring: 260 45% 50%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 251 70% 8%;
+    --sidebar-background: 265 45% 13%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 270 75% 60%;
+    --sidebar-primary: 260 45% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 250 70% 12%;
+    --sidebar-accent: 260 40% 25%;
     --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 250 70% 12%;
-    --sidebar-ring: 270 75% 60%;
-  }
-
-  .dark {
-    --background: 249 70% 5%;
-    --foreground: 210 40% 98%;
-
-    --card: 250 70% 7%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 249 70% 5%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 270 75% 60%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 250 70% 12%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 250 70% 12%;
-    --muted-foreground: 240 5% 75%;
-
-    --accent: 270 75% 60%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 80% 60%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 250 70% 12%;
-    --input: 250 70% 12%;
-    --ring: 270 75% 60%;
+    --sidebar-border: 260 40% 25%;
+    --sidebar-ring: 260 45% 50%;
   }
 }
 
@@ -121,7 +91,7 @@
   }
   
   .dashboard-card {
-    @apply bg-card rounded-xl shadow-md border border-gym-purple/20 overflow-hidden;
+    @apply bg-card rounded-xl shadow-md border border-gym-purpleLight/20 overflow-hidden;
   }
   
   .grid-card {
@@ -130,11 +100,11 @@
   
   /* Card colors matching the image */
   .card-blue {
-    @apply bg-blue-500/20 border-blue-500/30;
+    @apply bg-gym-blueAccent/20 border-gym-blueAccent/30;
   }
   
   .card-purple {
-    @apply bg-purple-500/20 border-purple-500/30;
+    @apply bg-gym-purpleHighlight/20 border-gym-purpleHighlight/30;
   }
   
   .card-pink {

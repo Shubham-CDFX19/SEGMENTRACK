@@ -1,22 +1,11 @@
 
 import { useState } from 'react';
-import { Bell, Search, Sun, Moon } from 'lucide-react';
+import { Bell, Search } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Navbar = () => {
-  const [isDark, setIsDark] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const { toast } = useToast();
-  
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
-    
-    toast({
-      title: isDark ? "Light mode activated" : "Dark mode activated",
-      description: "Your preference has been saved",
-    });
-  };
   
   const handleSearch = (e) => {
     e.preventDefault();
@@ -29,7 +18,7 @@ const Navbar = () => {
   };
   
   return (
-    <header className="sticky top-0 z-10 border-b border-gym-purple/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-10 border-b border-gym-purpleLight/20 bg-gym-purpleBase/95 backdrop-blur supports-[backdrop-filter]:bg-gym-purpleBase/60">
       <div className="flex h-16 items-center justify-between px-6">
         <div className="flex items-center gap-2 md:w-64">
           <h1 className="text-xl font-bold">Dashboard</h1>
@@ -43,7 +32,7 @@ const Navbar = () => {
                 <input
                   type="search"
                   placeholder="Search anything..."
-                  className="h-9 w-64 rounded-md border border-gym-purple/30 bg-background pl-10 pr-4 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gym-purple/50 focus-visible:ring-offset-2"
+                  className="h-9 w-64 rounded-full border border-gym-purpleHighlight/30 bg-gym-purpleDark pl-10 pr-4 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gym-purpleHighlight/50 focus-visible:ring-offset-2"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -53,14 +42,7 @@ const Navbar = () => {
           
           <div className="flex items-center gap-4">
             <button
-              className="rounded-full p-2 hover:bg-gym-purple/20 transition-colors"
-              onClick={toggleTheme}
-            >
-              {isDark ? <Sun className="h-5 w-5 text-gym-cyan" /> : <Moon className="h-5 w-5" />}
-            </button>
-            
-            <button
-              className="rounded-full p-2 hover:bg-gym-purple/20 transition-colors relative"
+              className="rounded-full p-2 hover:bg-gym-purpleLight/20 transition-colors relative"
               onClick={() => {
                 toast({
                   title: "Notifications",
@@ -68,14 +50,14 @@ const Navbar = () => {
                 });
               }}
             >
-              <Bell className="h-5 w-5 text-gym-pink" />
-              <span className="absolute -top-0.5 -right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-gym-pink text-[10px] font-medium text-white">
+              <Bell className="h-5 w-5 text-gym-purpleHighlight" />
+              <span className="absolute -top-0.5 -right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-gym-purpleProgress text-[10px] font-medium text-white">
                 3
               </span>
             </button>
             
             <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-full bg-indigo-600 flex items-center justify-center">
+              <div className="h-8 w-8 rounded-full bg-gym-purpleProgress flex items-center justify-center">
                 <span className="text-xs font-medium text-white">RD</span>
               </div>
               <div className="hidden md:block">
@@ -84,7 +66,7 @@ const Navbar = () => {
               </div>
             </div>
             
-            <button className="hidden md:block ml-2 text-xs font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-md">
+            <button className="hidden md:block ml-2 text-xs font-medium text-white bg-gym-purpleProgress hover:bg-gym-purpleHighlight px-3 py-1.5 rounded-md">
               Add Policy
             </button>
           </div>
