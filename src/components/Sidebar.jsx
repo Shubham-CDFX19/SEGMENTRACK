@@ -29,20 +29,20 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className={`h-screen ${collapsed ? 'w-20' : 'w-64'} bg-sidebar fixed left-0 top-0 z-10 transition-all duration-300 ease-in-out`}>
+    <div className={`h-screen ${collapsed ? 'w-20' : 'w-64'} bg-gym-darkpurple fixed left-0 top-0 z-10 transition-all duration-300 ease-in-out`}>
       <div className="flex h-full flex-col">
         {/* Sidebar header */}
-        <div className="flex items-center justify-between p-4 border-b border-sidebar-border">
+        <div className="flex items-center justify-between p-4 border-b border-gym-purple/20">
           {!collapsed && (
             <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-red">
+              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-neonpink">
                 <Dumbbell className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-bold text-white">SynergyGym</span>
             </Link>
           )}
           {collapsed && (
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-red mx-auto">
+            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-neonpink mx-auto">
               <Dumbbell className="h-5 w-5 text-white" />
             </div>
           )}
@@ -69,7 +69,7 @@ const Sidebar = () => {
                   } animate-fade-in`}
                   style={{ animationDelay: `${navigationItems.indexOf(item) * 0.05}s` }}
                 >
-                  <item.icon className="h-5 w-5" />
+                  <item.icon className={`h-5 w-5 ${isActive ? 'text-gym-cyan' : 'text-gym-purple'}`} />
                   {!collapsed && <span>{item.name}</span>}
                 </Link>
               );
@@ -78,11 +78,11 @@ const Sidebar = () => {
         </div>
 
         {/* Sidebar footer */}
-        <div className="border-t border-sidebar-border p-4">
+        <div className="border-t border-gym-purple/20 p-4">
           <div className={`flex ${collapsed ? 'justify-center' : 'items-center'} gap-3`}>
             {!collapsed && (
               <>
-                <div className="h-8 w-8 rounded-full bg-gym-blue flex items-center justify-center text-white font-medium">
+                <div className="h-8 w-8 rounded-full bg-gym-neonpurple flex items-center justify-center text-white font-medium">
                   A
                 </div>
                 <div className="flex-1">
@@ -93,7 +93,7 @@ const Sidebar = () => {
               </>
             )}
             {collapsed && (
-              <div className="h-8 w-8 rounded-full bg-gym-blue flex items-center justify-center text-white font-medium">
+              <div className="h-8 w-8 rounded-full bg-gym-neonpurple flex items-center justify-center text-white font-medium">
                 A
               </div>
             )}

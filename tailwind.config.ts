@@ -64,13 +64,20 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				gym: {
-					red: "#E63946",
-					blue: "#457B9D",
-					darkblue: "#1D3557",
-					lightblue: "#A8DADC",
-					green: "#4CAF50",
-					gray: "#2A2D3E",
-					darkgray: "#222431",
+					red: "#FF4D94",
+					pink: "#FF26B9",
+					purple: "#7C4DFF",
+					indigo: "#2C1E69",
+					darkpurple: "#1E103C",
+					blue: "#26C6FF",
+					cyan: "#42FFEC",
+					darkblue: "#181836",
+					neonpink: "#FF26B9",
+					neonblue: "#26C6FF",
+					neoncyan: "#42FFEC",
+					neonpurple: "#7C4DFF",
+					dark: "#0C0C1F",
+					darker: "#060616",
 					light: "#F1FAEE"
 				}
 			},
