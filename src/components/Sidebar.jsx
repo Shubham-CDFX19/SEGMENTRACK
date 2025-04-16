@@ -6,7 +6,7 @@ import {
   Users, 
   Calendar, 
   DollarSign, 
-  Dumbbell, 
+  AudioWaveform, 
   Menu, 
   X,
   LogOut,
@@ -24,12 +24,23 @@ const Sidebar = () => {
   
   const navigationItems = [
     { name: 'Dashboard', path: '/', icon: LayoutDashboard },
-    { name: 'Members', path: '/members', icon: Users },
-    { name: 'Trainers', path: '/trainers', icon: Dumbbell },
-    { name: 'Classes', path: '/classes', icon: Calendar },
+    { name: 'Customers', path: '/members', icon: Users },
     { name: 'Analytics', path: '/analytics', icon: BarChart3 },
     { name: 'Finances', path: '/finances', icon: DollarSign },
   ];
+
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileChange = (event) => {
+    const file = event.target.files?.[0];
+    if (file && (file.type === 'application/json' || file.type === 'text/csv')) {
+      setSelectedFile(file);
+    } else {
+      alert('Please upload a JSON or CSV file.');
+      event.target.value = '';
+      setSelectedFile(null);
+    }
+  };
 
   return (
     <div className={`h-screen ${collapsed ? 'w-20' : 'w-64'} bg-gym-purpleSidebar fixed left-0 top-0 z-10 transition-all duration-300 ease-in-out`}>
@@ -39,9 +50,9 @@ const Sidebar = () => {
           {!collapsed && (
             <Link to="/" className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-purpleProgress">
-                <Dumbbell className="h-5 w-5 text-white" />
+                <AudioWaveform className="h-5 w-5 text-white" />
               </div>
-              <span className="text-lg font-bold text-white">SynergyGym</span>
+              <span className="text-lg font-bold text-white">SegmenTrack</span>
             </Link>
           )}
           {collapsed && (
@@ -111,30 +122,31 @@ const Sidebar = () => {
                 <p className="text-xs uppercase text-gray-400 font-medium">Manage</p>
               </div>
               <nav className="space-y-1">
-                <a href="#" className="sidebar-item">
-                  <ShieldAlert className="h-5 w-5 text-gray-400" />
-                  <span>Data Security</span>
-                </a>
-                <a href="#" className="sidebar-item">
-                  <ServerCog className="h-5 w-5 text-gray-400" />
-                  <span>Server IT</span>
-                </a>
-                <a href="#" className="sidebar-item">
-                  <UserCheck className="h-5 w-5 text-gray-400" />
-                  <span>User Behavior</span>
-                </a>
-                <a href="#" className="sidebar-item">
-                  <Database className="h-5 w-5 text-gray-400" />
-                  <span>Data Cleansing</span>
-                </a>
-                <a href="#" className="sidebar-item">
-                  <Monitor className="h-5 w-5 text-gray-400" />
-                  <span>Devices</span>
-                </a>
+                <div className="sidebar-item">
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="file"
+                      accept=".json,.csv"
+                      onChange={handleFileChange}
+                      className="hidden"
+                      id="file-upload"
+                    />
+                    <span className="flex items-center">
+                      <Database className="h-5 w-5 text-gray-400 mr-2" />
+                      <span>Upload File (JSON/CSV)</span>
+                    </span>
+                  </label>
+                </div>
+                {selectedFile && (
+                  <div className="px-4 text-sm text-gray-300">
+                    Selected File: {selectedFile.name}
+                  </div>
+                )}
               </nav>
             </div>
           )}
         </div>
+
 
         {/* Sidebar footer */}
         <div className="border-t border-gym-purpleLight/20 p-4">
@@ -146,7 +158,7 @@ const Sidebar = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-medium text-white">Admin User</p>
-                  <p className="text-xs text-gray-400">admin@synergygym.com</p>
+                  <p className="text-xs text-gray-400">admin@gmail.com</p>
                 </div>
                 <LogOut className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
               </>

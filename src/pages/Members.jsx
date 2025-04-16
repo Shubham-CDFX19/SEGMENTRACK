@@ -1,5 +1,5 @@
-
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Papa from 'papaparse';
 import { 
   Search, 
   Plus, 
@@ -14,93 +14,50 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const members = [
-  {
-    id: 1,
-    name: 'Alex Johnson',
-    email: 'alex.j@example.com',
-    phone: '+1 (555) 123-4567',
-    plan: 'Premium',
-    joined: '12 May 2023',
-    status: 'Active',
-    lastVisit: '2 days ago',
-  },
-  {
-    id: 2,
-    name: 'Sara Williams',
-    email: 'sara.w@example.com',
-    phone: '+1 (555) 234-5678',
-    plan: 'Basic',
-    joined: '03 Jun 2023',
-    status: 'Active',
-    lastVisit: 'Today',
-  },
-  {
-    id: 3,
-    name: 'Mike Brown',
-    email: 'mike.b@example.com',
-    phone: '+1 (555) 345-6789',
-    plan: 'Premium',
-    joined: '17 Jun 2023',
-    status: 'Active',
-    lastVisit: 'Yesterday',
-  },
-  {
-    id: 4,
-    name: 'Jessica Taylor',
-    email: 'jessica.t@example.com',
-    phone: '+1 (555) 456-7890',
-    plan: 'Standard',
-    joined: '28 Jun 2023',
-    status: 'Inactive',
-    lastVisit: '2 weeks ago',
-  },
-  {
-    id: 5,
-    name: 'David Miller',
-    email: 'david.m@example.com',
-    phone: '+1 (555) 567-8901',
-    plan: 'Basic',
-    joined: '05 Jul 2023',
-    status: 'Active',
-    lastVisit: '3 days ago',
-  },
-  {
-    id: 6,
-    name: 'Emma Wilson',
-    email: 'emma.w@example.com',
-    phone: '+1 (555) 678-9012',
-    plan: 'Premium',
-    joined: '18 Jul 2023',
-    status: 'Active',
-    lastVisit: 'Today',
-  },
-  {
-    id: 7,
-    name: 'Ryan Garcia',
-    email: 'ryan.g@example.com',
-    phone: '+1 (555) 789-0123',
-    plan: 'Standard',
-    joined: '29 Jul 2023',
-    status: 'Inactive',
-    lastVisit: '1 month ago',
-  },
-  {
-    id: 8,
-    name: 'Olivia Martinez',
-    email: 'olivia.m@example.com',
-    phone: '+1 (555) 890-1234',
-    plan: 'Basic',
-    joined: '10 Aug 2023',
-    status: 'Active',
-    lastVisit: 'Yesterday',
-  },
-];
-
 const Members = () => {
+  const [members, setMembers] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [openMenu, setOpenMenu] = useState(null);
-  
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/segment.csv')
+      .then(response => response.text())
+      .then(csvText => {
+        Papa.parse(csvText, {
+          header: true,
+          complete: (result) => {
+            const uniqueCustomers = {};
+            result.data.forEach(row => {
+              if (row.CustomerID && !uniqueCustomers[row.CustomerID]) {
+                uniqueCustomers[row.CustomerID] = {
+                  id: parseInt(row.CustomerID),
+                  name: `Customer ${parseInt(row.CustomerID)}`,
+                  email: `${row.CustomerID}@example.com`,
+                  phone: `+1 (555) ${Math.floor(Math.random() * 1000).toString().padStart(3, '0')}-${Math.floor(Math.random() * 1000).toString().padStart(4, '0')}`,
+                  invoiceNo: row.InvoiceNo || 'N/A',
+                  invoiceDate: new Date(row.InvoiceDate).toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' }),
+                  status: Math.random() > 0.3 ? 'Active' : 'Inactive',
+                  lastVisit: `${Math.floor(Math.random() * 30)} days ago`,
+                  country: row.Country || 'Unknown',
+                };
+              }
+            });
+            setMembers(Object.values(uniqueCustomers));
+            setLoading(false);
+          },
+          error: (error) => {
+            console.error('Error parsing CSV:', error);
+            setLoading(false);
+          },
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching CSV:', error);
+        setLoading(false);
+      });
+  }, []);
+
   const filteredMembers = members.filter(member => 
     member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     member.email.toLowerCase().includes(searchTerm.toLowerCase())
@@ -110,16 +67,18 @@ const Members = () => {
     setOpenMenu(openMenu === id ? null : id);
   };
 
+  if (loading) return <div className="text-center p-4">Loading...</div>;
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <h1 className="text-3xl font-bold">Members</h1>
+        <h1 className="text-3xl font-bold">Customers</h1>
         <div className="flex items-center gap-3">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <input
               type="search"
-              placeholder="Search members..."
+              placeholder="Search customers..."
               className="h-10 w-full rounded-md border border-input bg-background pl-10 pr-4 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -143,10 +102,10 @@ const Members = () => {
             <table className="w-full caption-bottom text-sm">
               <thead className="[&_tr]:border-b">
                 <tr className="border-b text-left font-medium">
-                  <th className="p-4">Member</th>
+                  <th className="p-4">Customers</th>
                   <th className="p-4">Contact</th>
-                  <th className="p-4">Plan</th>
-                  <th className="p-4">Joined</th>
+                  <th className="p-4">InvoiceNo</th>
+                  <th className="p-4">InvoiceDate</th>
                   <th className="p-4">Status</th>
                   <th className="p-4">Last Visit</th>
                   <th className="p-4 text-right">Actions</th>
@@ -168,7 +127,7 @@ const Members = () => {
                         </div>
                         <div>
                           <div className="font-medium">{member.name}</div>
-                          <div className="text-xs text-muted-foreground">{member.email}</div>
+                          <div className="text-xs text-muted-foreground">{member.country}</div>
                         </div>
                       </div>
                     </td>
@@ -185,12 +144,12 @@ const Members = () => {
                       </div>
                     </td>
                     <td className="p-4">
-                      {member.plan}
+                      {member.invoiceNo}
                     </td>
                     <td className="p-4">
                       <div className="flex items-center text-muted-foreground">
                         <Calendar className="mr-2 h-4 w-4" />
-                        {member.joined}
+                        {member.invoiceDate}
                       </div>
                     </td>
                     <td className="p-4">
@@ -216,7 +175,7 @@ const Members = () => {
                         {openMenu === member.id && (
                           <div className="absolute right-0 z-10 mt-1 w-36 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-card">
                             <div className="py-1">
-                              <button className="flex w-full items-center px-4 py-2 text-sm hover:bg-muted transition-colors">
+                              <button className="flex w-full items-center px-4 py-2 text-black text-sm hover:text-white hover:bg-muted transition-colors">
                                 <Edit className="mr-2 h-4 w-4" />
                                 Edit
                               </button>

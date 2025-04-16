@@ -1,0 +1,3286 @@
+{
+    "clusters": [
+        {
+            "CustomerID": "12347.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12348.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12349.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12350.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12352.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12353.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12354.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12355.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12356.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12357.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12358.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12359.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12360.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12361.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12362.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12363.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12364.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12365.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12367.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12370.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12371.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12372.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12373.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12374.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12375.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12377.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12378.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12379.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12380.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12381.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12383.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12384.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12386.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12388.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12390.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12391.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12393.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12394.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12395.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12397.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12398.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12399.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12401.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12402.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12403.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12405.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12406.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12407.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12408.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12409.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12410.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12412.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12413.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12414.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12417.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12418.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12420.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12421.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12422.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12423.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12424.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12425.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12426.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12427.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12428.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12429.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12430.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12431.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12432.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12433.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12434.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12435.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12436.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12437.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12438.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12441.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12442.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12444.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12445.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12446.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12447.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12448.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12449.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12450.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12451.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12452.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12453.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12454.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12455.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12456.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12457.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12458.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12461.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12462.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12463.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12464.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12465.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12468.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12472.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12473.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12474.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12475.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12476.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12477.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12478.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12479.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12480.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12481.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12483.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12484.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12488.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12489.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12490.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12491.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12492.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12493.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12494.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12497.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12498.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12500.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12501.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12502.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12504.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12506.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12507.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12508.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12509.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12510.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12512.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12513.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12514.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12515.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12516.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12517.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12518.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12519.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12520.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12521.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12522.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12523.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12524.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12526.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12527.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12528.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12530.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12531.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12532.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12534.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12535.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12536.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12538.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12539.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12540.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12541.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12544.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12545.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12546.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12547.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12548.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12550.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12551.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12552.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12553.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12556.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12557.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12558.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12559.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12560.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12561.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12562.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12564.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12565.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12566.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12567.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12569.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12571.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12572.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12573.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12574.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12576.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12577.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12578.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12579.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12580.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12581.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12582.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12583.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12584.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12585.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12586.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12587.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12588.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12589.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12590.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12591.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12592.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12593.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12594.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12596.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12597.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12598.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12599.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12600.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12601.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12602.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12603.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12604.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12607.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12609.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12610.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12611.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12612.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12613.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12614.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12615.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12616.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12617.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12618.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12619.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12620.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12621.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12622.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12623.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12624.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12625.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12626.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12627.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12628.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12630.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12631.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12633.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12635.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12637.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12638.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12639.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12640.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12641.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12642.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12643.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12644.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12645.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12646.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12647.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12648.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12649.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12650.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12651.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12652.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12653.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12654.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12656.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12657.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12658.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12659.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12660.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12662.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12664.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12665.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12667.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12668.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12669.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12670.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12672.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12673.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12674.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12676.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12678.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12679.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12680.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12681.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12682.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12683.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12684.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12685.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12686.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12688.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12689.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12690.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12691.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12693.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12694.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12695.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12697.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12700.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12701.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12702.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12703.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12704.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12705.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12707.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12708.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12709.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12710.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12712.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12713.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12714.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12715.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12716.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12717.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12718.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12719.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12720.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12721.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12722.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12723.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12724.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12725.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12726.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12727.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12728.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12729.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12731.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12732.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12733.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12734.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12735.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12736.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12738.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12739.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12740.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12743.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12750.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12752.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12754.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12755.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12756.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12757.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12758.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12759.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12762.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12763.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12764.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12766.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12769.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12770.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12772.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12775.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12778.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12779.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12781.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12782.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12783.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12784.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12785.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12787.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12789.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12790.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12791.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12792.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12793.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12794.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12795.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12797.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12798.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12802.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12808.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12809.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12811.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12812.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12814.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12815.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12816.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12817.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12818.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12865.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "12866.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12876.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13492.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13493.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13501.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13505.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "13520.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13809.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13810.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13811.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13812.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13813.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13814.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13815.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13816.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13817.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "13919.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14016.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14265.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14277.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "14335.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14439.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14442.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14566.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14912.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14930.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14931.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14932.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14934.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14935.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14936.0",
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "14937.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "15108.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "15332.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "15388.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "15480.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "16320.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "16321.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "17097.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "17443.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17444.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "17508.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17828.0",
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "17829.0",
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17844.0",
+            "Cluster_ID": 1
+        }
+    ],
+    "purchaseGroups": [
+        {
+            "CustomerID": "12347.0",
+            "totalAmount": 4310.0
+        },
+        {
+            "CustomerID": "12348.0",
+            "totalAmount": 1797.24
+        },
+        {
+            "CustomerID": "12349.0",
+            "totalAmount": 1757.55
+        },
+        {
+            "CustomerID": "12350.0",
+            "totalAmount": 334.4
+        },
+        {
+            "CustomerID": "12352.0",
+            "totalAmount": 2506.04
+        },
+        {
+            "CustomerID": "12353.0",
+            "totalAmount": 89.0
+        },
+        {
+            "CustomerID": "12354.0",
+            "totalAmount": 1079.4
+        },
+        {
+            "CustomerID": "12355.0",
+            "totalAmount": 459.4
+        },
+        {
+            "CustomerID": "12356.0",
+            "totalAmount": 2811.43
+        },
+        {
+            "CustomerID": "12357.0",
+            "totalAmount": 6207.67
+        },
+        {
+            "CustomerID": "12358.0",
+            "totalAmount": 1168.06
+        },
+        {
+            "CustomerID": "12359.0",
+            "totalAmount": 6372.58
+        },
+        {
+            "CustomerID": "12360.0",
+            "totalAmount": 2662.06
+        },
+        {
+            "CustomerID": "12361.0",
+            "totalAmount": 189.9
+        },
+        {
+            "CustomerID": "12362.0",
+            "totalAmount": 5226.23
+        },
+        {
+            "CustomerID": "12363.0",
+            "totalAmount": 552.0
+        },
+        {
+            "CustomerID": "12364.0",
+            "totalAmount": 1313.1
+        },
+        {
+            "CustomerID": "12365.0",
+            "totalAmount": 641.38
+        },
+        {
+            "CustomerID": "12367.0",
+            "totalAmount": 168.9
+        },
+        {
+            "CustomerID": "12370.0",
+            "totalAmount": 3545.69
+        },
+        {
+            "CustomerID": "12371.0",
+            "totalAmount": 1887.96
+        },
+        {
+            "CustomerID": "12372.0",
+            "totalAmount": 1298.04
+        },
+        {
+            "CustomerID": "12373.0",
+            "totalAmount": 364.6
+        },
+        {
+            "CustomerID": "12374.0",
+            "totalAmount": 742.9300000000001
+        },
+        {
+            "CustomerID": "12375.0",
+            "totalAmount": 457.5
+        },
+        {
+            "CustomerID": "12377.0",
+            "totalAmount": 1628.12
+        },
+        {
+            "CustomerID": "12378.0",
+            "totalAmount": 4008.62
+        },
+        {
+            "CustomerID": "12379.0",
+            "totalAmount": 852.24
+        },
+        {
+            "CustomerID": "12380.0",
+            "totalAmount": 2724.81
+        },
+        {
+            "CustomerID": "12381.0",
+            "totalAmount": 1845.31
+        },
+        {
+            "CustomerID": "12383.0",
+            "totalAmount": 1850.56
+        },
+        {
+            "CustomerID": "12384.0",
+            "totalAmount": 585.27
+        },
+        {
+            "CustomerID": "12386.0",
+            "totalAmount": 401.9
+        },
+        {
+            "CustomerID": "12388.0",
+            "totalAmount": 2780.66
+        },
+        {
+            "CustomerID": "12390.0",
+            "totalAmount": 549.84
+        },
+        {
+            "CustomerID": "12391.0",
+            "totalAmount": 460.89
+        },
+        {
+            "CustomerID": "12393.0",
+            "totalAmount": 1582.6000000000001
+        },
+        {
+            "CustomerID": "12394.0",
+            "totalAmount": 1272.48
+        },
+        {
+            "CustomerID": "12395.0",
+            "totalAmount": 3018.63
+        },
+        {
+            "CustomerID": "12397.0",
+            "totalAmount": 2409.9
+        },
+        {
+            "CustomerID": "12398.0",
+            "totalAmount": 1635.6599999999999
+        },
+        {
+            "CustomerID": "12399.0",
+            "totalAmount": 1108.65
+        },
+        {
+            "CustomerID": "12401.0",
+            "totalAmount": 84.3
+        },
+        {
+            "CustomerID": "12402.0",
+            "totalAmount": 225.6
+        },
+        {
+            "CustomerID": "12403.0",
+            "totalAmount": 427.7
+        },
+        {
+            "CustomerID": "12405.0",
+            "totalAmount": 1710.39
+        },
+        {
+            "CustomerID": "12406.0",
+            "totalAmount": 3415.3
+        },
+        {
+            "CustomerID": "12407.0",
+            "totalAmount": 1708.1200000000001
+        },
+        {
+            "CustomerID": "12408.0",
+            "totalAmount": 2888.55
+        },
+        {
+            "CustomerID": "12409.0",
+            "totalAmount": 11072.67
+        },
+        {
+            "CustomerID": "12410.0",
+            "totalAmount": 693.3299999999999
+        },
+        {
+            "CustomerID": "12412.0",
+            "totalAmount": 1226.88
+        },
+        {
+            "CustomerID": "12413.0",
+            "totalAmount": 758.1
+        },
+        {
+            "CustomerID": "12414.0",
+            "totalAmount": 562.41
+        },
+        {
+            "CustomerID": "12417.0",
+            "totalAmount": 3649.1
+        },
+        {
+            "CustomerID": "12418.0",
+            "totalAmount": 668.58
+        },
+        {
+            "CustomerID": "12420.0",
+            "totalAmount": 600.39
+        },
+        {
+            "CustomerID": "12421.0",
+            "totalAmount": 807.04
+        },
+        {
+            "CustomerID": "12422.0",
+            "totalAmount": 803.5600000000001
+        },
+        {
+            "CustomerID": "12423.0",
+            "totalAmount": 1859.31
+        },
+        {
+            "CustomerID": "12424.0",
+            "totalAmount": 1760.96
+        },
+        {
+            "CustomerID": "12425.0",
+            "totalAmount": 777.2
+        },
+        {
+            "CustomerID": "12426.0",
+            "totalAmount": 582.73
+        },
+        {
+            "CustomerID": "12427.0",
+            "totalAmount": 825.8
+        },
+        {
+            "CustomerID": "12428.0",
+            "totalAmount": 7956.46
+        },
+        {
+            "CustomerID": "12429.0",
+            "totalAmount": 3750.4
+        },
+        {
+            "CustomerID": "12430.0",
+            "totalAmount": 256.4
+        },
+        {
+            "CustomerID": "12431.0",
+            "totalAmount": 6487.45
+        },
+        {
+            "CustomerID": "12432.0",
+            "totalAmount": 5059.32
+        },
+        {
+            "CustomerID": "12433.0",
+            "totalAmount": 13375.87
+        },
+        {
+            "CustomerID": "12434.0",
+            "totalAmount": 806.14
+        },
+        {
+            "CustomerID": "12435.0",
+            "totalAmount": 7829.89
+        },
+        {
+            "CustomerID": "12436.0",
+            "totalAmount": 509.01
+        },
+        {
+            "CustomerID": "12437.0",
+            "totalAmount": 4951.41
+        },
+        {
+            "CustomerID": "12438.0",
+            "totalAmount": 2906.85
+        },
+        {
+            "CustomerID": "12441.0",
+            "totalAmount": 173.55
+        },
+        {
+            "CustomerID": "12442.0",
+            "totalAmount": 172.06
+        },
+        {
+            "CustomerID": "12444.0",
+            "totalAmount": 5005.46
+        },
+        {
+            "CustomerID": "12445.0",
+            "totalAmount": 133.4
+        },
+        {
+            "CustomerID": "12446.0",
+            "totalAmount": 1002.3100000000001
+        },
+        {
+            "CustomerID": "12447.0",
+            "totalAmount": 476.49
+        },
+        {
+            "CustomerID": "12448.0",
+            "totalAmount": 449.45
+        },
+        {
+            "CustomerID": "12449.0",
+            "totalAmount": 4067.29
+        },
+        {
+            "CustomerID": "12450.0",
+            "totalAmount": 197.88
+        },
+        {
+            "CustomerID": "12451.0",
+            "totalAmount": 9035.52
+        },
+        {
+            "CustomerID": "12452.0",
+            "totalAmount": 430.57
+        },
+        {
+            "CustomerID": "12453.0",
+            "totalAmount": 707.09
+        },
+        {
+            "CustomerID": "12454.0",
+            "totalAmount": 3528.34
+        },
+        {
+            "CustomerID": "12455.0",
+            "totalAmount": 2466.86
+        },
+        {
+            "CustomerID": "12456.0",
+            "totalAmount": 3181.04
+        },
+        {
+            "CustomerID": "12457.0",
+            "totalAmount": 2363.23
+        },
+        {
+            "CustomerID": "12458.0",
+            "totalAmount": 947.4
+        },
+        {
+            "CustomerID": "12461.0",
+            "totalAmount": 826.88
+        },
+        {
+            "CustomerID": "12462.0",
+            "totalAmount": 1189.59
+        },
+        {
+            "CustomerID": "12463.0",
+            "totalAmount": 1344.78
+        },
+        {
+            "CustomerID": "12464.0",
+            "totalAmount": 1212.05
+        },
+        {
+            "CustomerID": "12465.0",
+            "totalAmount": 742.1899999999999
+        },
+        {
+            "CustomerID": "12468.0",
+            "totalAmount": 729.5400000000001
+        },
+        {
+            "CustomerID": "12472.0",
+            "totalAmount": 6572.11
+        },
+        {
+            "CustomerID": "12473.0",
+            "totalAmount": 3938.5499999999997
+        },
+        {
+            "CustomerID": "12474.0",
+            "totalAmount": 7375.79
+        },
+        {
+            "CustomerID": "12475.0",
+            "totalAmount": 723.38
+        },
+        {
+            "CustomerID": "12476.0",
+            "totalAmount": 6816.42
+        },
+        {
+            "CustomerID": "12477.0",
+            "totalAmount": 13219.74
+        },
+        {
+            "CustomerID": "12478.0",
+            "totalAmount": 680.99
+        },
+        {
+            "CustomerID": "12479.0",
+            "totalAmount": 527.2
+        },
+        {
+            "CustomerID": "12480.0",
+            "totalAmount": 3281.63
+        },
+        {
+            "CustomerID": "12481.0",
+            "totalAmount": 5596.32
+        },
+        {
+            "CustomerID": "12483.0",
+            "totalAmount": 2484.98
+        },
+        {
+            "CustomerID": "12484.0",
+            "totalAmount": 4541.72
+        },
+        {
+            "CustomerID": "12488.0",
+            "totalAmount": 1298.66
+        },
+        {
+            "CustomerID": "12489.0",
+            "totalAmount": 334.93
+        },
+        {
+            "CustomerID": "12490.0",
+            "totalAmount": 5417.93
+        },
+        {
+            "CustomerID": "12491.0",
+            "totalAmount": 460.40000000000003
+        },
+        {
+            "CustomerID": "12492.0",
+            "totalAmount": 263.21000000000004
+        },
+        {
+            "CustomerID": "12493.0",
+            "totalAmount": 433.74
+        },
+        {
+            "CustomerID": "12494.0",
+            "totalAmount": 1246.1000000000001
+        },
+        {
+            "CustomerID": "12497.0",
+            "totalAmount": 1043.1
+        },
+        {
+            "CustomerID": "12498.0",
+            "totalAmount": 403.70000000000005
+        },
+        {
+            "CustomerID": "12500.0",
+            "totalAmount": 4257.82
+        },
+        {
+            "CustomerID": "12501.0",
+            "totalAmount": 2169.39
+        },
+        {
+            "CustomerID": "12502.0",
+            "totalAmount": 3723.87
+        },
+        {
+            "CustomerID": "12504.0",
+            "totalAmount": 482.04999999999995
+        },
+        {
+            "CustomerID": "12506.0",
+            "totalAmount": 73.5
+        },
+        {
+            "CustomerID": "12507.0",
+            "totalAmount": 1304.81
+        },
+        {
+            "CustomerID": "12508.0",
+            "totalAmount": 398.27
+        },
+        {
+            "CustomerID": "12509.0",
+            "totalAmount": 176.5
+        },
+        {
+            "CustomerID": "12510.0",
+            "totalAmount": 982.5699999999999
+        },
+        {
+            "CustomerID": "12512.0",
+            "totalAmount": 138.03
+        },
+        {
+            "CustomerID": "12513.0",
+            "totalAmount": 612.29
+        },
+        {
+            "CustomerID": "12514.0",
+            "totalAmount": 1017.68
+        },
+        {
+            "CustomerID": "12515.0",
+            "totalAmount": 383.7
+        },
+        {
+            "CustomerID": "12516.0",
+            "totalAmount": 1312.06
+        },
+        {
+            "CustomerID": "12517.0",
+            "totalAmount": 2502.84
+        },
+        {
+            "CustomerID": "12518.0",
+            "totalAmount": 2056.89
+        },
+        {
+            "CustomerID": "12519.0",
+            "totalAmount": 340.84
+        },
+        {
+            "CustomerID": "12520.0",
+            "totalAmount": 2634.26
+        },
+        {
+            "CustomerID": "12521.0",
+            "totalAmount": 599.68
+        },
+        {
+            "CustomerID": "12522.0",
+            "totalAmount": 192.72
+        },
+        {
+            "CustomerID": "12523.0",
+            "totalAmount": 1789.77
+        },
+        {
+            "CustomerID": "12524.0",
+            "totalAmount": 4485.72
+        },
+        {
+            "CustomerID": "12526.0",
+            "totalAmount": 1316.66
+        },
+        {
+            "CustomerID": "12527.0",
+            "totalAmount": 348.71000000000004
+        },
+        {
+            "CustomerID": "12528.0",
+            "totalAmount": 1933.48
+        },
+        {
+            "CustomerID": "12530.0",
+            "totalAmount": 1662.28
+        },
+        {
+            "CustomerID": "12531.0",
+            "totalAmount": 125.22
+        },
+        {
+            "CustomerID": "12532.0",
+            "totalAmount": 349.83000000000004
+        },
+        {
+            "CustomerID": "12534.0",
+            "totalAmount": 1089.18
+        },
+        {
+            "CustomerID": "12535.0",
+            "totalAmount": 716.35
+        },
+        {
+            "CustomerID": "12536.0",
+            "totalAmount": 12601.830000000002
+        },
+        {
+            "CustomerID": "12538.0",
+            "totalAmount": 363.95
+        },
+        {
+            "CustomerID": "12539.0",
+            "totalAmount": 5568.35
+        },
+        {
+            "CustomerID": "12540.0",
+            "totalAmount": 13400.24
+        },
+        {
+            "CustomerID": "12541.0",
+            "totalAmount": 981.18
+        },
+        {
+            "CustomerID": "12544.0",
+            "totalAmount": 372.7
+        },
+        {
+            "CustomerID": "12545.0",
+            "totalAmount": 1000.39
+        },
+        {
+            "CustomerID": "12546.0",
+            "totalAmount": 1161.5
+        },
+        {
+            "CustomerID": "12547.0",
+            "totalAmount": 207.79999999999998
+        },
+        {
+            "CustomerID": "12548.0",
+            "totalAmount": 95.19999999999999
+        },
+        {
+            "CustomerID": "12550.0",
+            "totalAmount": 964.83
+        },
+        {
+            "CustomerID": "12551.0",
+            "totalAmount": 168.0
+        },
+        {
+            "CustomerID": "12552.0",
+            "totalAmount": 437.82
+        },
+        {
+            "CustomerID": "12553.0",
+            "totalAmount": 3692.28
+        },
+        {
+            "CustomerID": "12556.0",
+            "totalAmount": 603.71
+        },
+        {
+            "CustomerID": "12557.0",
+            "totalAmount": 11990.960000000001
+        },
+        {
+            "CustomerID": "12558.0",
+            "totalAmount": 269.96
+        },
+        {
+            "CustomerID": "12559.0",
+            "totalAmount": 561.71
+        },
+        {
+            "CustomerID": "12560.0",
+            "totalAmount": 2134.01
+        },
+        {
+            "CustomerID": "12561.0",
+            "totalAmount": 238.85
+        },
+        {
+            "CustomerID": "12562.0",
+            "totalAmount": 3781.7400000000002
+        },
+        {
+            "CustomerID": "12564.0",
+            "totalAmount": 456.9
+        },
+        {
+            "CustomerID": "12565.0",
+            "totalAmount": 145.92
+        },
+        {
+            "CustomerID": "12566.0",
+            "totalAmount": 351.65
+        },
+        {
+            "CustomerID": "12567.0",
+            "totalAmount": 9401.28
+        },
+        {
+            "CustomerID": "12569.0",
+            "totalAmount": 4124.69
+        },
+        {
+            "CustomerID": "12571.0",
+            "totalAmount": 519.61
+        },
+        {
+            "CustomerID": "12572.0",
+            "totalAmount": 1020.42
+        },
+        {
+            "CustomerID": "12573.0",
+            "totalAmount": 160.54000000000002
+        },
+        {
+            "CustomerID": "12574.0",
+            "totalAmount": 218.45
+        },
+        {
+            "CustomerID": "12576.0",
+            "totalAmount": 1315.83
+        },
+        {
+            "CustomerID": "12577.0",
+            "totalAmount": 657.8
+        },
+        {
+            "CustomerID": "12578.0",
+            "totalAmount": 2794.51
+        },
+        {
+            "CustomerID": "12579.0",
+            "totalAmount": 440.42
+        },
+        {
+            "CustomerID": "12580.0",
+            "totalAmount": 415.7
+        },
+        {
+            "CustomerID": "12581.0",
+            "totalAmount": 197.71
+        },
+        {
+            "CustomerID": "12582.0",
+            "totalAmount": 511.36
+        },
+        {
+            "CustomerID": "12583.0",
+            "totalAmount": 7281.38
+        },
+        {
+            "CustomerID": "12584.0",
+            "totalAmount": 2338.15
+        },
+        {
+            "CustomerID": "12585.0",
+            "totalAmount": 2040.1
+        },
+        {
+            "CustomerID": "12586.0",
+            "totalAmount": 196.94000000000003
+        },
+        {
+            "CustomerID": "12587.0",
+            "totalAmount": 144.0
+        },
+        {
+            "CustomerID": "12588.0",
+            "totalAmount": 214.89999999999998
+        },
+        {
+            "CustomerID": "12589.0",
+            "totalAmount": 646.68
+        },
+        {
+            "CustomerID": "12590.0",
+            "totalAmount": 9864.26
+        },
+        {
+            "CustomerID": "12591.0",
+            "totalAmount": 452.84999999999997
+        },
+        {
+            "CustomerID": "12592.0",
+            "totalAmount": 437.6
+        },
+        {
+            "CustomerID": "12593.0",
+            "totalAmount": 418.09999999999997
+        },
+        {
+            "CustomerID": "12594.0",
+            "totalAmount": 3338.2200000000003
+        },
+        {
+            "CustomerID": "12596.0",
+            "totalAmount": 618.27
+        },
+        {
+            "CustomerID": "12597.0",
+            "totalAmount": 3811.22
+        },
+        {
+            "CustomerID": "12598.0",
+            "totalAmount": 3023.08
+        },
+        {
+            "CustomerID": "12599.0",
+            "totalAmount": 1032.58
+        },
+        {
+            "CustomerID": "12600.0",
+            "totalAmount": 2599.04
+        },
+        {
+            "CustomerID": "12601.0",
+            "totalAmount": 577.0600000000001
+        },
+        {
+            "CustomerID": "12602.0",
+            "totalAmount": 153.12
+        },
+        {
+            "CustomerID": "12603.0",
+            "totalAmount": 739.1999999999999
+        },
+        {
+            "CustomerID": "12604.0",
+            "totalAmount": 254.18
+        },
+        {
+            "CustomerID": "12607.0",
+            "totalAmount": 1579.51
+        },
+        {
+            "CustomerID": "12609.0",
+            "totalAmount": 1126.85
+        },
+        {
+            "CustomerID": "12610.0",
+            "totalAmount": 2099.54
+        },
+        {
+            "CustomerID": "12611.0",
+            "totalAmount": 1193.32
+        },
+        {
+            "CustomerID": "12612.0",
+            "totalAmount": 704.0400000000001
+        },
+        {
+            "CustomerID": "12613.0",
+            "totalAmount": 3344.38
+        },
+        {
+            "CustomerID": "12614.0",
+            "totalAmount": 315.6
+        },
+        {
+            "CustomerID": "12615.0",
+            "totalAmount": 2291.19
+        },
+        {
+            "CustomerID": "12616.0",
+            "totalAmount": 713.3
+        },
+        {
+            "CustomerID": "12617.0",
+            "totalAmount": 355.53
+        },
+        {
+            "CustomerID": "12618.0",
+            "totalAmount": 177.31
+        },
+        {
+            "CustomerID": "12619.0",
+            "totalAmount": 3641.24
+        },
+        {
+            "CustomerID": "12620.0",
+            "totalAmount": 1339.41
+        },
+        {
+            "CustomerID": "12621.0",
+            "totalAmount": 13689.67
+        },
+        {
+            "CustomerID": "12622.0",
+            "totalAmount": 180.1
+        },
+        {
+            "CustomerID": "12623.0",
+            "totalAmount": 305.1
+        },
+        {
+            "CustomerID": "12624.0",
+            "totalAmount": 641.13
+        },
+        {
+            "CustomerID": "12625.0",
+            "totalAmount": 2683.82
+        },
+        {
+            "CustomerID": "12626.0",
+            "totalAmount": 6620.48
+        },
+        {
+            "CustomerID": "12627.0",
+            "totalAmount": 4478.53
+        },
+        {
+            "CustomerID": "12628.0",
+            "totalAmount": 786.46
+        },
+        {
+            "CustomerID": "12630.0",
+            "totalAmount": 1270.88
+        },
+        {
+            "CustomerID": "12631.0",
+            "totalAmount": 640.5
+        },
+        {
+            "CustomerID": "12633.0",
+            "totalAmount": 2163.98
+        },
+        {
+            "CustomerID": "12635.0",
+            "totalAmount": 1689.18
+        },
+        {
+            "CustomerID": "12637.0",
+            "totalAmount": 6021.9
+        },
+        {
+            "CustomerID": "12638.0",
+            "totalAmount": 671.69
+        },
+        {
+            "CustomerID": "12639.0",
+            "totalAmount": 486.1
+        },
+        {
+            "CustomerID": "12640.0",
+            "totalAmount": 1174.58
+        },
+        {
+            "CustomerID": "12641.0",
+            "totalAmount": 185.9
+        },
+        {
+            "CustomerID": "12642.0",
+            "totalAmount": 1013.26
+        },
+        {
+            "CustomerID": "12643.0",
+            "totalAmount": 3344.64
+        },
+        {
+            "CustomerID": "12644.0",
+            "totalAmount": 477.91
+        },
+        {
+            "CustomerID": "12645.0",
+            "totalAmount": 1775.18
+        },
+        {
+            "CustomerID": "12646.0",
+            "totalAmount": 1346.97
+        },
+        {
+            "CustomerID": "12647.0",
+            "totalAmount": 3722.82
+        },
+        {
+            "CustomerID": "12648.0",
+            "totalAmount": 318.05
+        },
+        {
+            "CustomerID": "12649.0",
+            "totalAmount": 623.51
+        },
+        {
+            "CustomerID": "12650.0",
+            "totalAmount": 314.44
+        },
+        {
+            "CustomerID": "12651.0",
+            "totalAmount": 114.0
+        },
+        {
+            "CustomerID": "12652.0",
+            "totalAmount": 919.98
+        },
+        {
+            "CustomerID": "12653.0",
+            "totalAmount": 2209.85
+        },
+        {
+            "CustomerID": "12654.0",
+            "totalAmount": 601.98
+        },
+        {
+            "CustomerID": "12656.0",
+            "totalAmount": 4051.17
+        },
+        {
+            "CustomerID": "12657.0",
+            "totalAmount": 1643.18
+        },
+        {
+            "CustomerID": "12658.0",
+            "totalAmount": 686.05
+        },
+        {
+            "CustomerID": "12659.0",
+            "totalAmount": 91.68
+        },
+        {
+            "CustomerID": "12660.0",
+            "totalAmount": 245.1
+        },
+        {
+            "CustomerID": "12662.0",
+            "totalAmount": 3849.78
+        },
+        {
+            "CustomerID": "12664.0",
+            "totalAmount": 4881.88
+        },
+        {
+            "CustomerID": "12665.0",
+            "totalAmount": 63.0
+        },
+        {
+            "CustomerID": "12667.0",
+            "totalAmount": 620.13
+        },
+        {
+            "CustomerID": "12668.0",
+            "totalAmount": 3807.15
+        },
+        {
+            "CustomerID": "12669.0",
+            "totalAmount": 2744.0299999999997
+        },
+        {
+            "CustomerID": "12670.0",
+            "totalAmount": 2996.05
+        },
+        {
+            "CustomerID": "12672.0",
+            "totalAmount": 225.89999999999998
+        },
+        {
+            "CustomerID": "12673.0",
+            "totalAmount": 610.52
+        },
+        {
+            "CustomerID": "12674.0",
+            "totalAmount": 1970.6
+        },
+        {
+            "CustomerID": "12676.0",
+            "totalAmount": 1331.39
+        },
+        {
+            "CustomerID": "12678.0",
+            "totalAmount": 17628.46
+        },
+        {
+            "CustomerID": "12679.0",
+            "totalAmount": 1113.02
+        },
+        {
+            "CustomerID": "12680.0",
+            "totalAmount": 862.81
+        },
+        {
+            "CustomerID": "12681.0",
+            "totalAmount": 13787.54
+        },
+        {
+            "CustomerID": "12682.0",
+            "totalAmount": 12288.22
+        },
+        {
+            "CustomerID": "12683.0",
+            "totalAmount": 8476.57
+        },
+        {
+            "CustomerID": "12684.0",
+            "totalAmount": 2283.63
+        },
+        {
+            "CustomerID": "12685.0",
+            "totalAmount": 2863.08
+        },
+        {
+            "CustomerID": "12686.0",
+            "totalAmount": 89.14
+        },
+        {
+            "CustomerID": "12688.0",
+            "totalAmount": 4873.8099999999995
+        },
+        {
+            "CustomerID": "12689.0",
+            "totalAmount": 1247.61
+        },
+        {
+            "CustomerID": "12690.0",
+            "totalAmount": 389.01
+        },
+        {
+            "CustomerID": "12691.0",
+            "totalAmount": 1035.8
+        },
+        {
+            "CustomerID": "12693.0",
+            "totalAmount": 855.91
+        },
+        {
+            "CustomerID": "12694.0",
+            "totalAmount": 869.67
+        },
+        {
+            "CustomerID": "12695.0",
+            "totalAmount": 582.1
+        },
+        {
+            "CustomerID": "12697.0",
+            "totalAmount": 957.59
+        },
+        {
+            "CustomerID": "12700.0",
+            "totalAmount": 4939.99
+        },
+        {
+            "CustomerID": "12701.0",
+            "totalAmount": 797.71
+        },
+        {
+            "CustomerID": "12702.0",
+            "totalAmount": 219.0
+        },
+        {
+            "CustomerID": "12703.0",
+            "totalAmount": 283.55
+        },
+        {
+            "CustomerID": "12704.0",
+            "totalAmount": 2340.84
+        },
+        {
+            "CustomerID": "12705.0",
+            "totalAmount": 6868.29
+        },
+        {
+            "CustomerID": "12707.0",
+            "totalAmount": 603.42
+        },
+        {
+            "CustomerID": "12708.0",
+            "totalAmount": 2712.91
+        },
+        {
+            "CustomerID": "12709.0",
+            "totalAmount": 9736.52
+        },
+        {
+            "CustomerID": "12710.0",
+            "totalAmount": 1149.02
+        },
+        {
+            "CustomerID": "12712.0",
+            "totalAmount": 4396.13
+        },
+        {
+            "CustomerID": "12713.0",
+            "totalAmount": 848.55
+        },
+        {
+            "CustomerID": "12714.0",
+            "totalAmount": 4708.86
+        },
+        {
+            "CustomerID": "12715.0",
+            "totalAmount": 353.86
+        },
+        {
+            "CustomerID": "12716.0",
+            "totalAmount": 1053.49
+        },
+        {
+            "CustomerID": "12717.0",
+            "totalAmount": 1030.98
+        },
+        {
+            "CustomerID": "12718.0",
+            "totalAmount": 238.25
+        },
+        {
+            "CustomerID": "12719.0",
+            "totalAmount": 644.95
+        },
+        {
+            "CustomerID": "12720.0",
+            "totalAmount": 5781.73
+        },
+        {
+            "CustomerID": "12721.0",
+            "totalAmount": 2656.13
+        },
+        {
+            "CustomerID": "12722.0",
+            "totalAmount": 997.63
+        },
+        {
+            "CustomerID": "12723.0",
+            "totalAmount": 725.07
+        },
+        {
+            "CustomerID": "12724.0",
+            "totalAmount": 1031.41
+        },
+        {
+            "CustomerID": "12725.0",
+            "totalAmount": 427.8
+        },
+        {
+            "CustomerID": "12726.0",
+            "totalAmount": 2609.1
+        },
+        {
+            "CustomerID": "12727.0",
+            "totalAmount": 3980.7
+        },
+        {
+            "CustomerID": "12728.0",
+            "totalAmount": 836.33
+        },
+        {
+            "CustomerID": "12729.0",
+            "totalAmount": 453.01
+        },
+        {
+            "CustomerID": "12731.0",
+            "totalAmount": 18895.91
+        },
+        {
+            "CustomerID": "12732.0",
+            "totalAmount": 236.26000000000002
+        },
+        {
+            "CustomerID": "12733.0",
+            "totalAmount": 383.95
+        },
+        {
+            "CustomerID": "12734.0",
+            "totalAmount": 110.39999999999999
+        },
+        {
+            "CustomerID": "12735.0",
+            "totalAmount": 779.5699999999999
+        },
+        {
+            "CustomerID": "12736.0",
+            "totalAmount": 234.0
+        },
+        {
+            "CustomerID": "12738.0",
+            "totalAmount": 155.35
+        },
+        {
+            "CustomerID": "12739.0",
+            "totalAmount": 1013.04
+        },
+        {
+            "CustomerID": "12740.0",
+            "totalAmount": 427.6
+        },
+        {
+            "CustomerID": "12743.0",
+            "totalAmount": 546.43
+        },
+        {
+            "CustomerID": "12750.0",
+            "totalAmount": 275.88
+        },
+        {
+            "CustomerID": "12752.0",
+            "totalAmount": 4366.78
+        },
+        {
+            "CustomerID": "12754.0",
+            "totalAmount": 3010.74
+        },
+        {
+            "CustomerID": "12755.0",
+            "totalAmount": 3811.95
+        },
+        {
+            "CustomerID": "12756.0",
+            "totalAmount": 112.07999999999998
+        },
+        {
+            "CustomerID": "12757.0",
+            "totalAmount": 7857.1
+        },
+        {
+            "CustomerID": "12758.0",
+            "totalAmount": 2791.59
+        },
+        {
+            "CustomerID": "12759.0",
+            "totalAmount": 1531.44
+        },
+        {
+            "CustomerID": "12762.0",
+            "totalAmount": 1898.52
+        },
+        {
+            "CustomerID": "12763.0",
+            "totalAmount": 494.08
+        },
+        {
+            "CustomerID": "12764.0",
+            "totalAmount": 1693.88
+        },
+        {
+            "CustomerID": "12766.0",
+            "totalAmount": 6989.63
+        },
+        {
+            "CustomerID": "12769.0",
+            "totalAmount": 1143.6
+        },
+        {
+            "CustomerID": "12770.0",
+            "totalAmount": 1351.45
+        },
+        {
+            "CustomerID": "12772.0",
+            "totalAmount": 892.47
+        },
+        {
+            "CustomerID": "12775.0",
+            "totalAmount": 1386.04
+        },
+        {
+            "CustomerID": "12778.0",
+            "totalAmount": 822.23
+        },
+        {
+            "CustomerID": "12779.0",
+            "totalAmount": 3981.36
+        },
+        {
+            "CustomerID": "12781.0",
+            "totalAmount": 826.74
+        },
+        {
+            "CustomerID": "12782.0",
+            "totalAmount": 2330.92
+        },
+        {
+            "CustomerID": "12783.0",
+            "totalAmount": 2225.91
+        },
+        {
+            "CustomerID": "12784.0",
+            "totalAmount": 574.42
+        },
+        {
+            "CustomerID": "12785.0",
+            "totalAmount": 311.95
+        },
+        {
+            "CustomerID": "12787.0",
+            "totalAmount": 463.66
+        },
+        {
+            "CustomerID": "12789.0",
+            "totalAmount": 91.85
+        },
+        {
+            "CustomerID": "12790.0",
+            "totalAmount": 324.92
+        },
+        {
+            "CustomerID": "12791.0",
+            "totalAmount": 192.60000000000002
+        },
+        {
+            "CustomerID": "12792.0",
+            "totalAmount": 400.53999999999996
+        },
+        {
+            "CustomerID": "12793.0",
+            "totalAmount": 545.48
+        },
+        {
+            "CustomerID": "12794.0",
+            "totalAmount": 860.41
+        },
+        {
+            "CustomerID": "12795.0",
+            "totalAmount": 430.48
+        },
+        {
+            "CustomerID": "12797.0",
+            "totalAmount": 254.03
+        },
+        {
+            "CustomerID": "12798.0",
+            "totalAmount": 6977.04
+        },
+        {
+            "CustomerID": "12802.0",
+            "totalAmount": 427.58
+        },
+        {
+            "CustomerID": "12808.0",
+            "totalAmount": 483.65000000000003
+        },
+        {
+            "CustomerID": "12809.0",
+            "totalAmount": 489.31
+        },
+        {
+            "CustomerID": "12811.0",
+            "totalAmount": 514.85
+        },
+        {
+            "CustomerID": "12812.0",
+            "totalAmount": 229.64000000000001
+        },
+        {
+            "CustomerID": "12814.0",
+            "totalAmount": 125.92
+        },
+        {
+            "CustomerID": "12815.0",
+            "totalAmount": 1063.46
+        },
+        {
+            "CustomerID": "12816.0",
+            "totalAmount": 572.2
+        },
+        {
+            "CustomerID": "12817.0",
+            "totalAmount": 166.04
+        },
+        {
+            "CustomerID": "12818.0",
+            "totalAmount": 1542.08
+        },
+        {
+            "CustomerID": "12865.0",
+            "totalAmount": 1568.23
+        },
+        {
+            "CustomerID": "12866.0",
+            "totalAmount": 559.12
+        },
+        {
+            "CustomerID": "12876.0",
+            "totalAmount": 2218.02
+        },
+        {
+            "CustomerID": "13492.0",
+            "totalAmount": 1269.84
+        },
+        {
+            "CustomerID": "13493.0",
+            "totalAmount": 618.63
+        },
+        {
+            "CustomerID": "13501.0",
+            "totalAmount": 1340.32
+        },
+        {
+            "CustomerID": "13505.0",
+            "totalAmount": 4393.63
+        },
+        {
+            "CustomerID": "13520.0",
+            "totalAmount": 3624.35
+        },
+        {
+            "CustomerID": "13809.0",
+            "totalAmount": 155.05
+        },
+        {
+            "CustomerID": "13810.0",
+            "totalAmount": 1499.01
+        },
+        {
+            "CustomerID": "13811.0",
+            "totalAmount": 814.5
+        },
+        {
+            "CustomerID": "13812.0",
+            "totalAmount": 539.0
+        },
+        {
+            "CustomerID": "13813.0",
+            "totalAmount": 1366.8600000000001
+        },
+        {
+            "CustomerID": "13814.0",
+            "totalAmount": 1579.12
+        },
+        {
+            "CustomerID": "13815.0",
+            "totalAmount": 4027.36
+        },
+        {
+            "CustomerID": "13816.0",
+            "totalAmount": 571.6700000000001
+        },
+        {
+            "CustomerID": "13817.0",
+            "totalAmount": 382.98
+        },
+        {
+            "CustomerID": "13919.0",
+            "totalAmount": 384.81
+        },
+        {
+            "CustomerID": "14016.0",
+            "totalAmount": 4341.21
+        },
+        {
+            "CustomerID": "14265.0",
+            "totalAmount": 530.18
+        },
+        {
+            "CustomerID": "14277.0",
+            "totalAmount": 4216.2
+        },
+        {
+            "CustomerID": "14335.0",
+            "totalAmount": 468.26
+        },
+        {
+            "CustomerID": "14439.0",
+            "totalAmount": 2661.24
+        },
+        {
+            "CustomerID": "14442.0",
+            "totalAmount": 1589.82
+        },
+        {
+            "CustomerID": "14566.0",
+            "totalAmount": 1432.0
+        },
+        {
+            "CustomerID": "14912.0",
+            "totalAmount": 867.85
+        },
+        {
+            "CustomerID": "14930.0",
+            "totalAmount": 2372.86
+        },
+        {
+            "CustomerID": "14931.0",
+            "totalAmount": 1257.68
+        },
+        {
+            "CustomerID": "14932.0",
+            "totalAmount": 363.53
+        },
+        {
+            "CustomerID": "14934.0",
+            "totalAmount": 1890.94
+        },
+        {
+            "CustomerID": "14935.0",
+            "totalAmount": 1784.71
+        },
+        {
+            "CustomerID": "14936.0",
+            "totalAmount": 8137.02
+        },
+        {
+            "CustomerID": "14937.0",
+            "totalAmount": 1621.88
+        },
+        {
+            "CustomerID": "15108.0",
+            "totalAmount": 1300.25
+        },
+        {
+            "CustomerID": "15332.0",
+            "totalAmount": 1661.06
+        },
+        {
+            "CustomerID": "15388.0",
+            "totalAmount": 140.54
+        },
+        {
+            "CustomerID": "15480.0",
+            "totalAmount": 905.5
+        },
+        {
+            "CustomerID": "16320.0",
+            "totalAmount": 1038.46
+        },
+        {
+            "CustomerID": "16321.0",
+            "totalAmount": 373.65000000000003
+        },
+        {
+            "CustomerID": "17097.0",
+            "totalAmount": 954.42
+        },
+        {
+            "CustomerID": "17443.0",
+            "totalAmount": 534.24
+        },
+        {
+            "CustomerID": "17444.0",
+            "totalAmount": 2940.04
+        },
+        {
+            "CustomerID": "17508.0",
+            "totalAmount": 387.31
+        },
+        {
+            "CustomerID": "17828.0",
+            "totalAmount": 1820.09
+        },
+        {
+            "CustomerID": "17829.0",
+            "totalAmount": 889.24
+        },
+        {
+            "CustomerID": "17844.0",
+            "totalAmount": 51.559999999999995
+        }
+    ]
+}
