@@ -58,17 +58,15 @@ const Navbar = () => {
             
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-full bg-gym-purpleProgress flex items-center justify-center">
-                <span className="text-xs font-medium text-white">RD</span>
+                <span className="text-xs font-medium text-white">SS</span>
               </div>
               <div className="hidden md:block">
-                <p className="text-sm font-medium">Robert</p>
+                <p className="text-sm font-medium">Shubham</p>
                 <p className="text-xs text-muted-foreground">Admin</p>
               </div>
             </div>
             
-            <button className="hidden md:block ml-2 text-xs font-medium text-white bg-gym-purpleProgress hover:bg-gym-purpleHighlight px-3 py-1.5 rounded-md">
-              Add Policy
-            </button>
+           
           </div>
         </div>
       </div>

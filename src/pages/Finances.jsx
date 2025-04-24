@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Calendar, 
   DollarSign,
@@ -130,6 +130,112 @@ const Finances = () => {
     return null;
   };
 
+  const exportAsPDF = () => {
+    if (!window.jspdf) {
+      toast({
+        title: "Error",
+        description: "Required library for PDF export is not loaded yet. Please try again in a moment.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+
+    // Set document properties
+    pdf.setProperties({
+      title: 'Financial Overview Report',
+      subject: 'Financial Report',
+      author: 'Your Company',
+      keywords: 'financial, report, overview',
+      creator: 'Finances App',
+    });
+
+    // Add title
+    pdf.setFontSize(20);
+    pdf.text('Financial Overview Report', 20, 20);
+
+    // Add date
+    pdf.setFontSize(10);
+    pdf.text(`Date: ${new Date().toLocaleDateString()}`, 20, 30);
+
+    // Add financial summary
+    pdf.setFontSize(14);
+    pdf.text('Financial Summary', 20, 50);
+    pdf.setFontSize(12);
+    pdf.text(`Total Revenue: ${formatCurrency(totalRevenue)}`, 20, 60);
+    pdf.text(`Total Expenses: ${formatCurrency(totalExpenses)}`, 20, 70);
+    pdf.text(`Net Profit: ${formatCurrency(totalProfit)}`, 20, 80);
+
+    // Add monthly revenue table
+    pdf.setFontSize(14);
+    pdf.text('Monthly Revenue by Cluster', 20, 100);
+    pdf.autoTable({
+      startY: 110,
+      head: [['Cluster', 'Revenue', 'Profit']],
+      body: monthlyRevenue.map(m => [m.month, formatCurrency(m.revenue), formatCurrency(m.profit)]),
+      theme: 'grid',
+      headStyles: { fillColor: [44, 30, 105] },
+      alternateRowStyles: { fillColor: [30, 16, 60] },
+    });
+
+    // Add expense categories table
+    pdf.setFontSize(14);
+    pdf.text('Expense Breakdown', 20, pdf.autoTable.previous.finalY + 20);
+    pdf.autoTable({
+      startY: pdf.autoTable.previous.finalY + 30,
+      head: [['Category', 'Amount']],
+      body: expenseCategories.map(e => [e.category, formatCurrency(e.amount)]),
+      theme: 'grid',
+      headStyles: { fillColor: [44, 30, 105] },
+      alternateRowStyles: { fillColor: [30, 16, 60] },
+    });
+
+    // Add transactions table
+    pdf.setFontSize(14);
+    pdf.text('Recent Transactions', 20, pdf.autoTable.previous.finalY + 20);
+    pdf.autoTable({
+      startY: pdf.autoTable.previous.finalY + 30,
+      head: [['Date', 'Description', 'Method', 'Status', 'Amount']],
+      body: transactions.map(t => [
+        new Date(t.date).toLocaleDateString(),
+        t.description,
+        t.method,
+        t.status,
+        `${t.type === 'income' ? '+' : '-'}${formatCurrency(t.amount)}`,
+      ]),
+      theme: 'grid',
+      headStyles: { fillColor: [44, 30, 105] },
+      alternateRowStyles: { fillColor: [30, 16, 60] },
+    });
+
+    // Save the PDF
+    pdf.save('Financial_Overview_Report.pdf');
+
+    toast({
+      title: "Report Downloaded",
+      description: "Financial report has been downloaded successfully",
+    });
+  };
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    const autoTableScript = document.createElement('script');
+    autoTableScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js';
+    autoTableScript.async = true;
+    document.body.appendChild(autoTableScript);
+
+    return () => {
+      document.body.removeChild(script);
+      document.body.removeChild(autoTableScript);
+    };
+  }, []);
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -159,13 +265,9 @@ const Finances = () => {
             <Filter className="mr-2 h-4 w-4 text-gym-cyan" />
             Filter
           </button>
-          <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-gym-neonpink text-white hover:bg-gym-pink/90 h-10 px-4 py-2 neon-glow"
-            onClick={() => {
-              toast({
-                title: "Report Downloaded",
-                description: "Financial report has been downloaded successfully",
-              });
-            }}
+          <button 
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-gym-neonpink text-white hover:bg-gym-pink/90 h-10 px-4 py-2 neon-glow"
+            onClick={exportAsPDF}
           >
             <Download className="mr-2 h-4 w-4" />
             Export Report
