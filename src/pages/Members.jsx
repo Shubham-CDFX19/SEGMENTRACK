@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import Papa from 'papaparse';
+import React, { useState } from 'react';
 import { 
   Search, 
   Plus, 
@@ -13,50 +12,24 @@ import {
   Calendar
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useData } from '../DataContext'; // Import useData
 
 const Members = () => {
-  const [members, setMembers] = useState([]);
+  const { segmentationData } = useData(); // Use context
   const [searchTerm, setSearchTerm] = useState('');
   const [openMenu, setOpenMenu] = useState(null);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch('/segment.csv')
-      .then(response => response.text())
-      .then(csvText => {
-        Papa.parse(csvText, {
-          header: true,
-          complete: (result) => {
-            const uniqueCustomers = {};
-            result.data.forEach(row => {
-              if (row.CustomerID && !uniqueCustomers[row.CustomerID]) {
-                uniqueCustomers[row.CustomerID] = {
-                  id: parseInt(row.CustomerID),
-                  name: `Customer ${parseInt(row.CustomerID)}`,
-                  email: `${row.CustomerID}@example.com`,
-                  phone: `+1 (555) ${Math.floor(Math.random() * 1000).toString().padStart(3, '0')}-${Math.floor(Math.random() * 1000).toString().padStart(4, '0')}`,
-                  invoiceNo: row.InvoiceNo || 'N/A',
-                  invoiceDate: new Date(row.InvoiceDate).toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' }),
-                  status: Math.random() > 0.3 ? 'Active' : 'Inactive',
-                  lastVisit: `${Math.floor(Math.random() * 30)} days ago`,
-                  country: row.Country || 'Unknown',
-                };
-              }
-            });
-            setMembers(Object.values(uniqueCustomers));
-            setLoading(false);
-          },
-          error: (error) => {
-            console.error('Error parsing CSV:', error);
-            setLoading(false);
-          },
-        });
-      })
-      .catch(error => {
-        console.error('Error fetching CSV:', error);
-        setLoading(false);
-      });
-  }, []);
+  const members = segmentationData.customer_segments.map(customer => ({
+    id: customer.CustomerID,
+    name: `Customer ${customer.CustomerID}`,
+    email: `${customer.CustomerID}@example.com`,
+    phone: `+1 (555) ${Math.floor(Math.random() * 1000).toString().padStart(3, '0')}-${Math.floor(Math.random() * 1000).toString().padStart(4, '0')}`,
+    invoiceNo: 'N/A', // Placeholder as InvoiceNo not in JSON
+    invoiceDate: new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' }), // Placeholder
+    status: customer.Recency <= 30 ? 'Active' : 'Inactive',
+    lastVisit: `${customer.Recency} days ago`,
+    country: customer.Country || 'Unknown',
+  }));
 
   const filteredMembers = members.filter(member => 
     member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -66,8 +39,6 @@ const Members = () => {
   const toggleMenu = (id) => {
     setOpenMenu(openMenu === id ? null : id);
   };
-
-  if (loading) return <div className="text-center p-4">Loading...</div>;
 
   return (
     <div className="space-y-6">

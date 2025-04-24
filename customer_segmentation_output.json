@@ -1,0 +1,3872 @@
+{
+    "customer_segments": [
+        {
+            "CustomerID": "12347.0",
+            "Country": "Iceland",
+            "Recency": 2,
+            "Frequency": 7,
+            "Monetary": 4310.0,
+            "UniqueCategories": 56,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12348.0",
+            "Country": "Finland",
+            "Recency": 75,
+            "Frequency": 4,
+            "Monetary": 1797.24,
+            "UniqueCategories": 9,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12349.0",
+            "Country": "Italy",
+            "Recency": 19,
+            "Frequency": 1,
+            "Monetary": 1757.55,
+            "UniqueCategories": 45,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12350.0",
+            "Country": "Norway",
+            "Recency": 310,
+            "Frequency": 1,
+            "Monetary": 334.4,
+            "UniqueCategories": 12,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12352.0",
+            "Country": "Norway",
+            "Recency": 36,
+            "Frequency": 8,
+            "Monetary": 2506.04,
+            "UniqueCategories": 39,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12353.0",
+            "Country": "Bahrain",
+            "Recency": 204,
+            "Frequency": 1,
+            "Monetary": 89.0,
+            "UniqueCategories": 3,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12354.0",
+            "Country": "Spain",
+            "Recency": 232,
+            "Frequency": 1,
+            "Monetary": 1079.4,
+            "UniqueCategories": 34,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12355.0",
+            "Country": "Bahrain",
+            "Recency": 214,
+            "Frequency": 1,
+            "Monetary": 459.4,
+            "UniqueCategories": 13,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12356.0",
+            "Country": "Portugal",
+            "Recency": 23,
+            "Frequency": 3,
+            "Monetary": 2811.43,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12357.0",
+            "Country": "Switzerland",
+            "Recency": 33,
+            "Frequency": 1,
+            "Monetary": 6207.67,
+            "UniqueCategories": 70,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12358.0",
+            "Country": "Austria",
+            "Recency": 2,
+            "Frequency": 2,
+            "Monetary": 1168.06,
+            "UniqueCategories": 6,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12359.0",
+            "Country": "Cyprus",
+            "Recency": 58,
+            "Frequency": 4,
+            "Monetary": 6372.58,
+            "UniqueCategories": 101,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12360.0",
+            "Country": "Austria",
+            "Recency": 52,
+            "Frequency": 3,
+            "Monetary": 2662.06,
+            "UniqueCategories": 48,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12361.0",
+            "Country": "Belgium",
+            "Recency": 287,
+            "Frequency": 1,
+            "Monetary": 189.9,
+            "UniqueCategories": 7,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12362.0",
+            "Country": "Belgium",
+            "Recency": 3,
+            "Frequency": 10,
+            "Monetary": 5226.23,
+            "UniqueCategories": 90,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12363.0",
+            "Country": "Unspecified",
+            "Recency": 110,
+            "Frequency": 2,
+            "Monetary": 552.0,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12364.0",
+            "Country": "Belgium",
+            "Recency": 8,
+            "Frequency": 4,
+            "Monetary": 1313.1,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12365.0",
+            "Country": "Cyprus",
+            "Recency": 291,
+            "Frequency": 2,
+            "Monetary": 641.38,
+            "UniqueCategories": 17,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12367.0",
+            "Country": "Denmark",
+            "Recency": 4,
+            "Frequency": 1,
+            "Monetary": 168.9,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12370.0",
+            "Country": "Cyprus",
+            "Recency": 51,
+            "Frequency": 4,
+            "Monetary": 3545.69,
+            "UniqueCategories": 75,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12370.0",
+            "Country": "Austria",
+            "Recency": 51,
+            "Frequency": 4,
+            "Monetary": 3545.69,
+            "UniqueCategories": 75,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12371.0",
+            "Country": "Switzerland",
+            "Recency": 45,
+            "Frequency": 2,
+            "Monetary": 1887.96,
+            "UniqueCategories": 38,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12372.0",
+            "Country": "Denmark",
+            "Recency": 72,
+            "Frequency": 3,
+            "Monetary": 1298.04,
+            "UniqueCategories": 18,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12373.0",
+            "Country": "Austria",
+            "Recency": 311,
+            "Frequency": 1,
+            "Monetary": 364.6,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12374.0",
+            "Country": "Austria",
+            "Recency": 25,
+            "Frequency": 1,
+            "Monetary": 742.9300000000001,
+            "UniqueCategories": 26,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12375.0",
+            "Country": "Finland",
+            "Recency": 11,
+            "Frequency": 2,
+            "Monetary": 457.5,
+            "UniqueCategories": 6,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12377.0",
+            "Country": "Switzerland",
+            "Recency": 315,
+            "Frequency": 2,
+            "Monetary": 1628.12,
+            "UniqueCategories": 48,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12378.0",
+            "Country": "Switzerland",
+            "Recency": 130,
+            "Frequency": 1,
+            "Monetary": 4008.62,
+            "UniqueCategories": 98,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12379.0",
+            "Country": "Belgium",
+            "Recency": 82,
+            "Frequency": 2,
+            "Monetary": 852.24,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12380.0",
+            "Country": "Belgium",
+            "Recency": 22,
+            "Frequency": 4,
+            "Monetary": 2724.81,
+            "UniqueCategories": 38,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12381.0",
+            "Country": "Norway",
+            "Recency": 5,
+            "Frequency": 5,
+            "Monetary": 1845.31,
+            "UniqueCategories": 42,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12383.0",
+            "Country": "Belgium",
+            "Recency": 185,
+            "Frequency": 5,
+            "Monetary": 1850.56,
+            "UniqueCategories": 38,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12384.0",
+            "Country": "Switzerland",
+            "Recency": 29,
+            "Frequency": 2,
+            "Monetary": 585.27,
+            "UniqueCategories": 20,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12386.0",
+            "Country": "Australia",
+            "Recency": 338,
+            "Frequency": 2,
+            "Monetary": 401.9,
+            "UniqueCategories": 8,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12388.0",
+            "Country": "Australia",
+            "Recency": 16,
+            "Frequency": 6,
+            "Monetary": 2780.66,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12390.0",
+            "Country": "Belgium",
+            "Recency": 80,
+            "Frequency": 1,
+            "Monetary": 549.84,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12391.0",
+            "Country": "Cyprus",
+            "Recency": 22,
+            "Frequency": 1,
+            "Monetary": 460.89,
+            "UniqueCategories": 46,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12393.0",
+            "Country": "Australia",
+            "Recency": 72,
+            "Frequency": 4,
+            "Monetary": 1582.6000000000001,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12394.0",
+            "Country": "Belgium",
+            "Recency": 64,
+            "Frequency": 2,
+            "Monetary": 1272.48,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12394.0",
+            "Country": "Denmark",
+            "Recency": 64,
+            "Frequency": 2,
+            "Monetary": 1272.48,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12395.0",
+            "Country": "Belgium",
+            "Recency": 19,
+            "Frequency": 12,
+            "Monetary": 3018.63,
+            "UniqueCategories": 47,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12397.0",
+            "Country": "Belgium",
+            "Recency": 36,
+            "Frequency": 2,
+            "Monetary": 2409.9,
+            "UniqueCategories": 53,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12398.0",
+            "Country": "Switzerland",
+            "Recency": 46,
+            "Frequency": 1,
+            "Monetary": 1635.6599999999999,
+            "UniqueCategories": 34,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12399.0",
+            "Country": "Belgium",
+            "Recency": 119,
+            "Frequency": 4,
+            "Monetary": 1108.65,
+            "UniqueCategories": 22,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12401.0",
+            "Country": "Belgium",
+            "Recency": 303,
+            "Frequency": 1,
+            "Monetary": 84.3,
+            "UniqueCategories": 5,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12402.0",
+            "Country": "Belgium",
+            "Recency": 323,
+            "Frequency": 1,
+            "Monetary": 225.6,
+            "UniqueCategories": 7,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12403.0",
+            "Country": "Denmark",
+            "Recency": 50,
+            "Frequency": 1,
+            "Monetary": 427.7,
+            "UniqueCategories": 3,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12405.0",
+            "Country": "Finland",
+            "Recency": 149,
+            "Frequency": 1,
+            "Monetary": 1710.39,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12406.0",
+            "Country": "Denmark",
+            "Recency": 22,
+            "Frequency": 2,
+            "Monetary": 3415.3,
+            "UniqueCategories": 43,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12407.0",
+            "Country": "Belgium",
+            "Recency": 50,
+            "Frequency": 5,
+            "Monetary": 1708.1200000000001,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12408.0",
+            "Country": "Belgium",
+            "Recency": 33,
+            "Frequency": 5,
+            "Monetary": 2888.55,
+            "UniqueCategories": 41,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12409.0",
+            "Country": "Switzerland",
+            "Recency": 79,
+            "Frequency": 3,
+            "Monetary": 11072.67,
+            "UniqueCategories": 56,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12410.0",
+            "Country": "Switzerland",
+            "Recency": 309,
+            "Frequency": 2,
+            "Monetary": 693.3299999999999,
+            "UniqueCategories": 12,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12412.0",
+            "Country": "Denmark",
+            "Recency": 75,
+            "Frequency": 3,
+            "Monetary": 1226.88,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12413.0",
+            "Country": "France",
+            "Recency": 67,
+            "Frequency": 3,
+            "Monetary": 758.1,
+            "UniqueCategories": 22,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12414.0",
+            "Country": "Austria",
+            "Recency": 217,
+            "Frequency": 3,
+            "Monetary": 562.41,
+            "UniqueCategories": 10,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12415.0",
+            "Country": "Australia",
+            "Recency": 24,
+            "Frequency": 21,
+            "Monetary": 124914.53,
+            "UniqueCategories": 143,
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "12417.0",
+            "Country": "Belgium",
+            "Recency": 3,
+            "Frequency": 9,
+            "Monetary": 3649.1,
+            "UniqueCategories": 83,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12417.0",
+            "Country": "Spain",
+            "Recency": 3,
+            "Frequency": 9,
+            "Monetary": 3649.1,
+            "UniqueCategories": 83,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12418.0",
+            "Country": "Switzerland",
+            "Recency": 113,
+            "Frequency": 1,
+            "Monetary": 668.58,
+            "UniqueCategories": 21,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12420.0",
+            "Country": "Cyprus",
+            "Recency": 64,
+            "Frequency": 1,
+            "Monetary": 600.39,
+            "UniqueCategories": 21,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12421.0",
+            "Country": "Spain",
+            "Recency": 16,
+            "Frequency": 4,
+            "Monetary": 807.04,
+            "UniqueCategories": 27,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12422.0",
+            "Country": "Australia",
+            "Recency": 96,
+            "Frequency": 3,
+            "Monetary": 803.5600000000001,
+            "UniqueCategories": 19,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12422.0",
+            "Country": "Switzerland",
+            "Recency": 96,
+            "Frequency": 3,
+            "Monetary": 803.5600000000001,
+            "UniqueCategories": 19,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12423.0",
+            "Country": "Belgium",
+            "Recency": 1,
+            "Frequency": 8,
+            "Monetary": 1859.31,
+            "UniqueCategories": 60,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12424.0",
+            "Country": "Australia",
+            "Recency": 163,
+            "Frequency": 2,
+            "Monetary": 1760.96,
+            "UniqueCategories": 18,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12425.0",
+            "Country": "Portugal",
+            "Recency": 78,
+            "Frequency": 1,
+            "Monetary": 777.2,
+            "UniqueCategories": 25,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12426.0",
+            "Country": "Germany",
+            "Recency": 195,
+            "Frequency": 1,
+            "Monetary": 582.73,
+            "UniqueCategories": 20,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12427.0",
+            "Country": "Germany",
+            "Recency": 22,
+            "Frequency": 3,
+            "Monetary": 825.8,
+            "UniqueCategories": 19,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12428.0",
+            "Country": "Finland",
+            "Recency": 26,
+            "Frequency": 9,
+            "Monetary": 7956.46,
+            "UniqueCategories": 101,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12429.0",
+            "Country": "Denmark",
+            "Recency": 9,
+            "Frequency": 4,
+            "Monetary": 3750.4,
+            "UniqueCategories": 44,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12429.0",
+            "Country": "Austria",
+            "Recency": 9,
+            "Frequency": 4,
+            "Monetary": 3750.4,
+            "UniqueCategories": 44,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12430.0",
+            "Country": "Norway",
+            "Recency": 43,
+            "Frequency": 1,
+            "Monetary": 256.4,
+            "UniqueCategories": 9,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12431.0",
+            "Country": "Australia",
+            "Recency": 36,
+            "Frequency": 15,
+            "Monetary": 6487.45,
+            "UniqueCategories": 84,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12431.0",
+            "Country": "Belgium",
+            "Recency": 36,
+            "Frequency": 15,
+            "Monetary": 6487.45,
+            "UniqueCategories": 84,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12432.0",
+            "Country": "Norway",
+            "Recency": 43,
+            "Frequency": 5,
+            "Monetary": 5059.32,
+            "UniqueCategories": 62,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12433.0",
+            "Country": "Norway",
+            "Recency": 1,
+            "Frequency": 7,
+            "Monetary": 13375.87,
+            "UniqueCategories": 103,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12434.0",
+            "Country": "Australia",
+            "Recency": 85,
+            "Frequency": 2,
+            "Monetary": 806.14,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12435.0",
+            "Country": "Denmark",
+            "Recency": 80,
+            "Frequency": 2,
+            "Monetary": 7829.89,
+            "UniqueCategories": 20,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12436.0",
+            "Country": "Norway",
+            "Recency": 100,
+            "Frequency": 1,
+            "Monetary": 509.01,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12437.0",
+            "Country": "France",
+            "Recency": 2,
+            "Frequency": 18,
+            "Monetary": 4951.41,
+            "UniqueCategories": 62,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12438.0",
+            "Country": "Norway",
+            "Recency": 14,
+            "Frequency": 2,
+            "Monetary": 2906.85,
+            "UniqueCategories": 47,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12441.0",
+            "Country": "France",
+            "Recency": 367,
+            "Frequency": 1,
+            "Monetary": 173.55,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12442.0",
+            "Country": "Spain",
+            "Recency": 3,
+            "Frequency": 1,
+            "Monetary": 172.06,
+            "UniqueCategories": 8,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12444.0",
+            "Country": "Norway",
+            "Recency": 21,
+            "Frequency": 5,
+            "Monetary": 5005.46,
+            "UniqueCategories": 78,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12445.0",
+            "Country": "Spain",
+            "Recency": 22,
+            "Frequency": 1,
+            "Monetary": 133.4,
+            "UniqueCategories": 3,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12446.0",
+            "Country": "RSA",
+            "Recency": 58,
+            "Frequency": 1,
+            "Monetary": 1002.3100000000001,
+            "UniqueCategories": 34,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12447.0",
+            "Country": "Belgium",
+            "Recency": 243,
+            "Frequency": 1,
+            "Monetary": 476.49,
+            "UniqueCategories": 12,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12448.0",
+            "Country": "Spain",
+            "Recency": 44,
+            "Frequency": 1,
+            "Monetary": 449.45,
+            "UniqueCategories": 18,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12449.0",
+            "Country": "Belgium",
+            "Recency": 22,
+            "Frequency": 4,
+            "Monetary": 4067.29,
+            "UniqueCategories": 61,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12450.0",
+            "Country": "Spain",
+            "Recency": 156,
+            "Frequency": 2,
+            "Monetary": 197.88,
+            "UniqueCategories": 6,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12451.0",
+            "Country": "Switzerland",
+            "Recency": 11,
+            "Frequency": 5,
+            "Monetary": 9035.52,
+            "UniqueCategories": 114,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12452.0",
+            "Country": "Switzerland",
+            "Recency": 17,
+            "Frequency": 2,
+            "Monetary": 430.57,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12453.0",
+            "Country": "Austria",
+            "Recency": 134,
+            "Frequency": 1,
+            "Monetary": 707.09,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12454.0",
+            "Country": "Spain",
+            "Recency": 56,
+            "Frequency": 1,
+            "Monetary": 3528.34,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12455.0",
+            "Country": "Cyprus",
+            "Recency": 73,
+            "Frequency": 6,
+            "Monetary": 2466.86,
+            "UniqueCategories": 40,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12455.0",
+            "Country": "Spain",
+            "Recency": 73,
+            "Frequency": 6,
+            "Monetary": 2466.86,
+            "UniqueCategories": 40,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12456.0",
+            "Country": "Switzerland",
+            "Recency": 44,
+            "Frequency": 3,
+            "Monetary": 3181.04,
+            "UniqueCategories": 62,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12457.0",
+            "Country": "Switzerland",
+            "Recency": 66,
+            "Frequency": 7,
+            "Monetary": 2363.23,
+            "UniqueCategories": 35,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12457.0",
+            "Country": "Cyprus",
+            "Recency": 66,
+            "Frequency": 7,
+            "Monetary": 2363.23,
+            "UniqueCategories": 35,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12458.0",
+            "Country": "Switzerland",
+            "Recency": 71,
+            "Frequency": 2,
+            "Monetary": 947.4,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12461.0",
+            "Country": "Switzerland",
+            "Recency": 94,
+            "Frequency": 2,
+            "Monetary": 826.88,
+            "UniqueCategories": 21,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12462.0",
+            "Country": "Spain",
+            "Recency": 19,
+            "Frequency": 2,
+            "Monetary": 1189.59,
+            "UniqueCategories": 34,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12463.0",
+            "Country": "Belgium",
+            "Recency": 53,
+            "Frequency": 4,
+            "Monetary": 1344.78,
+            "UniqueCategories": 52,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12464.0",
+            "Country": "Belgium",
+            "Recency": 10,
+            "Frequency": 8,
+            "Monetary": 1212.05,
+            "UniqueCategories": 5,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12465.0",
+            "Country": "Belgium",
+            "Recency": 17,
+            "Frequency": 2,
+            "Monetary": 742.1899999999999,
+            "UniqueCategories": 26,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12468.0",
+            "Country": "Germany",
+            "Recency": 188,
+            "Frequency": 2,
+            "Monetary": 729.5400000000001,
+            "UniqueCategories": 27,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12471.0",
+            "Country": "Germany",
+            "Recency": 2,
+            "Frequency": 30,
+            "Monetary": 19824.05,
+            "UniqueCategories": 72,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12472.0",
+            "Country": "Germany",
+            "Recency": 32,
+            "Frequency": 7,
+            "Monetary": 6572.11,
+            "UniqueCategories": 83,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12473.0",
+            "Country": "Germany",
+            "Recency": 29,
+            "Frequency": 5,
+            "Monetary": 3938.5499999999997,
+            "UniqueCategories": 84,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12474.0",
+            "Country": "Germany",
+            "Recency": 17,
+            "Frequency": 18,
+            "Monetary": 7375.79,
+            "UniqueCategories": 99,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12475.0",
+            "Country": "Germany",
+            "Recency": 54,
+            "Frequency": 1,
+            "Monetary": 723.38,
+            "UniqueCategories": 24,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12476.0",
+            "Country": "Germany",
+            "Recency": 16,
+            "Frequency": 11,
+            "Monetary": 6816.42,
+            "UniqueCategories": 99,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12477.0",
+            "Country": "Germany",
+            "Recency": 23,
+            "Frequency": 6,
+            "Monetary": 13219.74,
+            "UniqueCategories": 92,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12478.0",
+            "Country": "Greece",
+            "Recency": 4,
+            "Frequency": 1,
+            "Monetary": 680.99,
+            "UniqueCategories": 25,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12479.0",
+            "Country": "Germany",
+            "Recency": 11,
+            "Frequency": 1,
+            "Monetary": 527.2,
+            "UniqueCategories": 16,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12480.0",
+            "Country": "Germany",
+            "Recency": 28,
+            "Frequency": 4,
+            "Monetary": 3281.63,
+            "UniqueCategories": 69,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12481.0",
+            "Country": "Germany",
+            "Recency": 23,
+            "Frequency": 10,
+            "Monetary": 5596.32,
+            "UniqueCategories": 73,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12483.0",
+            "Country": "Sweden",
+            "Recency": 17,
+            "Frequency": 8,
+            "Monetary": 2484.98,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12484.0",
+            "Country": "Spain",
+            "Recency": 33,
+            "Frequency": 6,
+            "Monetary": 4541.72,
+            "UniqueCategories": 123,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12488.0",
+            "Country": "France",
+            "Recency": 10,
+            "Frequency": 3,
+            "Monetary": 1298.66,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12489.0",
+            "Country": "France",
+            "Recency": 336,
+            "Frequency": 1,
+            "Monetary": 334.93,
+            "UniqueCategories": 14,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12490.0",
+            "Country": "France",
+            "Recency": 5,
+            "Frequency": 10,
+            "Monetary": 5417.93,
+            "UniqueCategories": 62,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12491.0",
+            "Country": "France",
+            "Recency": 39,
+            "Frequency": 1,
+            "Monetary": 460.40000000000003,
+            "UniqueCategories": 16,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12492.0",
+            "Country": "Germany",
+            "Recency": 63,
+            "Frequency": 2,
+            "Monetary": 263.21000000000004,
+            "UniqueCategories": 15,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12493.0",
+            "Country": "France",
+            "Recency": 166,
+            "Frequency": 2,
+            "Monetary": 433.74,
+            "UniqueCategories": 11,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12494.0",
+            "Country": "France",
+            "Recency": 16,
+            "Frequency": 7,
+            "Monetary": 1246.1000000000001,
+            "UniqueCategories": 35,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12497.0",
+            "Country": "Germany",
+            "Recency": 82,
+            "Frequency": 1,
+            "Monetary": 1043.1,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12498.0",
+            "Country": "Germany",
+            "Recency": 21,
+            "Frequency": 3,
+            "Monetary": 403.70000000000005,
+            "UniqueCategories": 16,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12500.0",
+            "Country": "Germany",
+            "Recency": 23,
+            "Frequency": 11,
+            "Monetary": 4257.82,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12501.0",
+            "Country": "Germany",
+            "Recency": 337,
+            "Frequency": 1,
+            "Monetary": 2169.39,
+            "UniqueCategories": 68,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12502.0",
+            "Country": "Spain",
+            "Recency": 96,
+            "Frequency": 5,
+            "Monetary": 3723.87,
+            "UniqueCategories": 55,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12504.0",
+            "Country": "Germany",
+            "Recency": 18,
+            "Frequency": 2,
+            "Monetary": 482.04999999999995,
+            "UniqueCategories": 4,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12506.0",
+            "Country": "France",
+            "Recency": 233,
+            "Frequency": 1,
+            "Monetary": 73.5,
+            "UniqueCategories": 11,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12507.0",
+            "Country": "Spain",
+            "Recency": 134,
+            "Frequency": 3,
+            "Monetary": 1304.81,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12508.0",
+            "Country": "France",
+            "Recency": 26,
+            "Frequency": 2,
+            "Monetary": 398.27,
+            "UniqueCategories": 39,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12509.0",
+            "Country": "France",
+            "Recency": 284,
+            "Frequency": 1,
+            "Monetary": 176.5,
+            "UniqueCategories": 6,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12510.0",
+            "Country": "Spain",
+            "Recency": 143,
+            "Frequency": 2,
+            "Monetary": 982.5699999999999,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12512.0",
+            "Country": "Israel",
+            "Recency": 66,
+            "Frequency": 2,
+            "Monetary": 138.03,
+            "UniqueCategories": 24,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12513.0",
+            "Country": "France",
+            "Recency": 113,
+            "Frequency": 1,
+            "Monetary": 612.29,
+            "UniqueCategories": 19,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12514.0",
+            "Country": "Italy",
+            "Recency": 267,
+            "Frequency": 1,
+            "Monetary": 1017.68,
+            "UniqueCategories": 34,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12515.0",
+            "Country": "Italy",
+            "Recency": 353,
+            "Frequency": 1,
+            "Monetary": 383.7,
+            "UniqueCategories": 11,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12516.0",
+            "Country": "Germany",
+            "Recency": 78,
+            "Frequency": 2,
+            "Monetary": 1312.06,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12517.0",
+            "Country": "Germany",
+            "Recency": 28,
+            "Frequency": 5,
+            "Monetary": 2502.84,
+            "UniqueCategories": 88,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12518.0",
+            "Country": "Germany",
+            "Recency": 1,
+            "Frequency": 5,
+            "Monetary": 2056.89,
+            "UniqueCategories": 47,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12519.0",
+            "Country": "Germany",
+            "Recency": 64,
+            "Frequency": 1,
+            "Monetary": 340.84,
+            "UniqueCategories": 14,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12520.0",
+            "Country": "Germany",
+            "Recency": 79,
+            "Frequency": 5,
+            "Monetary": 2634.26,
+            "UniqueCategories": 61,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12521.0",
+            "Country": "Germany",
+            "Recency": 143,
+            "Frequency": 1,
+            "Monetary": 599.68,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12522.0",
+            "Country": "Germany",
+            "Recency": 39,
+            "Frequency": 2,
+            "Monetary": 192.72,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12523.0",
+            "Country": "France",
+            "Recency": 19,
+            "Frequency": 11,
+            "Monetary": 1789.77,
+            "UniqueCategories": 53,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12524.0",
+            "Country": "Germany",
+            "Recency": 9,
+            "Frequency": 8,
+            "Monetary": 4485.72,
+            "UniqueCategories": 61,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12526.0",
+            "Country": "Germany",
+            "Recency": 1,
+            "Frequency": 3,
+            "Monetary": 1316.66,
+            "UniqueCategories": 31,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12527.0",
+            "Country": "Germany",
+            "Recency": 82,
+            "Frequency": 3,
+            "Monetary": 348.71000000000004,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12528.0",
+            "Country": "Germany",
+            "Recency": 9,
+            "Frequency": 6,
+            "Monetary": 1933.48,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12530.0",
+            "Country": "Germany",
+            "Recency": 60,
+            "Frequency": 4,
+            "Monetary": 1662.28,
+            "UniqueCategories": 31,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12531.0",
+            "Country": "Germany",
+            "Recency": 15,
+            "Frequency": 1,
+            "Monetary": 125.22,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12532.0",
+            "Country": "France",
+            "Recency": 30,
+            "Frequency": 1,
+            "Monetary": 349.83000000000004,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12534.0",
+            "Country": "Germany",
+            "Recency": 131,
+            "Frequency": 1,
+            "Monetary": 1089.18,
+            "UniqueCategories": 43,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12535.0",
+            "Country": "France",
+            "Recency": 92,
+            "Frequency": 2,
+            "Monetary": 716.35,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12536.0",
+            "Country": "France",
+            "Recency": 43,
+            "Frequency": 3,
+            "Monetary": 12601.830000000002,
+            "UniqueCategories": 133,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12538.0",
+            "Country": "Spain",
+            "Recency": 29,
+            "Frequency": 1,
+            "Monetary": 363.95,
+            "UniqueCategories": 12,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12539.0",
+            "Country": "Spain",
+            "Recency": 22,
+            "Frequency": 4,
+            "Monetary": 5568.35,
+            "UniqueCategories": 87,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12540.0",
+            "Country": "Spain",
+            "Recency": 20,
+            "Frequency": 17,
+            "Monetary": 13400.24,
+            "UniqueCategories": 142,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12541.0",
+            "Country": "Spain",
+            "Recency": 30,
+            "Frequency": 3,
+            "Monetary": 981.18,
+            "UniqueCategories": 27,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12544.0",
+            "Country": "Spain",
+            "Recency": 36,
+            "Frequency": 1,
+            "Monetary": 372.7,
+            "UniqueCategories": 12,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12545.0",
+            "Country": "Spain",
+            "Recency": 75,
+            "Frequency": 2,
+            "Monetary": 1000.39,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12546.0",
+            "Country": "Spain",
+            "Recency": 47,
+            "Frequency": 2,
+            "Monetary": 1161.5,
+            "UniqueCategories": 36,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12547.0",
+            "Country": "Spain",
+            "Recency": 198,
+            "Frequency": 2,
+            "Monetary": 207.79999999999998,
+            "UniqueCategories": 6,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12548.0",
+            "Country": "Spain",
+            "Recency": 166,
+            "Frequency": 1,
+            "Monetary": 95.19999999999999,
+            "UniqueCategories": 2,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12550.0",
+            "Country": "Spain",
+            "Recency": 79,
+            "Frequency": 1,
+            "Monetary": 964.83,
+            "UniqueCategories": 34,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12551.0",
+            "Country": "Spain",
+            "Recency": 358,
+            "Frequency": 1,
+            "Monetary": 168.0,
+            "UniqueCategories": 6,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12552.0",
+            "Country": "Italy",
+            "Recency": 39,
+            "Frequency": 2,
+            "Monetary": 437.82,
+            "UniqueCategories": 14,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12553.0",
+            "Country": "France",
+            "Recency": 8,
+            "Frequency": 10,
+            "Monetary": 3692.28,
+            "UniqueCategories": 52,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12556.0",
+            "Country": "Spain",
+            "Recency": 50,
+            "Frequency": 2,
+            "Monetary": 603.71,
+            "UniqueCategories": 65,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12557.0",
+            "Country": "Spain",
+            "Recency": 16,
+            "Frequency": 5,
+            "Monetary": 11990.960000000001,
+            "UniqueCategories": 6,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12558.0",
+            "Country": "USA",
+            "Recency": 8,
+            "Frequency": 1,
+            "Monetary": 269.96,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12559.0",
+            "Country": "Germany",
+            "Recency": 311,
+            "Frequency": 2,
+            "Monetary": 561.71,
+            "UniqueCategories": 15,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12560.0",
+            "Country": "Germany",
+            "Recency": 5,
+            "Frequency": 3,
+            "Monetary": 2134.01,
+            "UniqueCategories": 45,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12561.0",
+            "Country": "Germany",
+            "Recency": 303,
+            "Frequency": 1,
+            "Monetary": 238.85,
+            "UniqueCategories": 15,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12562.0",
+            "Country": "France",
+            "Recency": 8,
+            "Frequency": 7,
+            "Monetary": 3781.7400000000002,
+            "UniqueCategories": 43,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12564.0",
+            "Country": "France",
+            "Recency": 261,
+            "Frequency": 1,
+            "Monetary": 456.9,
+            "UniqueCategories": 12,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12565.0",
+            "Country": "Saudi Arabia",
+            "Recency": 289,
+            "Frequency": 1,
+            "Monetary": 145.92,
+            "UniqueCategories": 5,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12566.0",
+            "Country": "Germany",
+            "Recency": 86,
+            "Frequency": 1,
+            "Monetary": 351.65,
+            "UniqueCategories": 16,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12567.0",
+            "Country": "France",
+            "Recency": 23,
+            "Frequency": 10,
+            "Monetary": 9401.28,
+            "UniqueCategories": 140,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12569.0",
+            "Country": "Germany",
+            "Recency": 2,
+            "Frequency": 32,
+            "Monetary": 4124.69,
+            "UniqueCategories": 45,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12571.0",
+            "Country": "France",
+            "Recency": 40,
+            "Frequency": 2,
+            "Monetary": 519.61,
+            "UniqueCategories": 20,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12572.0",
+            "Country": "Germany",
+            "Recency": 9,
+            "Frequency": 2,
+            "Monetary": 1020.42,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12573.0",
+            "Country": "France",
+            "Recency": 227,
+            "Frequency": 1,
+            "Monetary": 160.54000000000002,
+            "UniqueCategories": 24,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12574.0",
+            "Country": "France",
+            "Recency": 316,
+            "Frequency": 1,
+            "Monetary": 218.45,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12576.0",
+            "Country": "Poland",
+            "Recency": 36,
+            "Frequency": 5,
+            "Monetary": 1315.83,
+            "UniqueCategories": 39,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12577.0",
+            "Country": "France",
+            "Recency": 35,
+            "Frequency": 3,
+            "Monetary": 657.8,
+            "UniqueCategories": 81,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12578.0",
+            "Country": "Italy",
+            "Recency": 21,
+            "Frequency": 2,
+            "Monetary": 2794.51,
+            "UniqueCategories": 61,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12579.0",
+            "Country": "France",
+            "Recency": 78,
+            "Frequency": 1,
+            "Monetary": 440.42,
+            "UniqueCategories": 18,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12580.0",
+            "Country": "Germany",
+            "Recency": 247,
+            "Frequency": 1,
+            "Monetary": 415.7,
+            "UniqueCategories": 12,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12581.0",
+            "Country": "Germany",
+            "Recency": 40,
+            "Frequency": 1,
+            "Monetary": 197.71,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12582.0",
+            "Country": "Finland",
+            "Recency": 239,
+            "Frequency": 2,
+            "Monetary": 511.36,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12583.0",
+            "Country": "France",
+            "Recency": 3,
+            "Frequency": 15,
+            "Monetary": 7281.38,
+            "UniqueCategories": 57,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12584.0",
+            "Country": "Italy",
+            "Recency": 4,
+            "Frequency": 9,
+            "Monetary": 2338.15,
+            "UniqueCategories": 25,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12585.0",
+            "Country": "Germany",
+            "Recency": 234,
+            "Frequency": 2,
+            "Monetary": 2040.1,
+            "UniqueCategories": 43,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12586.0",
+            "Country": "Italy",
+            "Recency": 17,
+            "Frequency": 1,
+            "Monetary": 196.94000000000003,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12587.0",
+            "Country": "Finland",
+            "Recency": 8,
+            "Frequency": 1,
+            "Monetary": 144.0,
+            "UniqueCategories": 2,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12588.0",
+            "Country": "Finland",
+            "Recency": 39,
+            "Frequency": 1,
+            "Monetary": 214.89999999999998,
+            "UniqueCategories": 9,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12589.0",
+            "Country": "France",
+            "Recency": 29,
+            "Frequency": 2,
+            "Monetary": 646.68,
+            "UniqueCategories": 16,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12590.0",
+            "Country": "Germany",
+            "Recency": 211,
+            "Frequency": 2,
+            "Monetary": 9864.26,
+            "UniqueCategories": 36,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12591.0",
+            "Country": "Italy",
+            "Recency": 317,
+            "Frequency": 1,
+            "Monetary": 452.84999999999997,
+            "UniqueCategories": 21,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12592.0",
+            "Country": "Germany",
+            "Recency": 92,
+            "Frequency": 2,
+            "Monetary": 437.6,
+            "UniqueCategories": 8,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12593.0",
+            "Country": "France",
+            "Recency": 109,
+            "Frequency": 3,
+            "Monetary": 418.09999999999997,
+            "UniqueCategories": 7,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12594.0",
+            "Country": "Italy",
+            "Recency": 38,
+            "Frequency": 10,
+            "Monetary": 3338.2200000000003,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12596.0",
+            "Country": "Spain",
+            "Recency": 51,
+            "Frequency": 2,
+            "Monetary": 618.27,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12597.0",
+            "Country": "Spain",
+            "Recency": 19,
+            "Frequency": 4,
+            "Monetary": 3811.22,
+            "UniqueCategories": 105,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12598.0",
+            "Country": "France",
+            "Recency": 10,
+            "Frequency": 8,
+            "Monetary": 3023.08,
+            "UniqueCategories": 41,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12599.0",
+            "Country": "France",
+            "Recency": 29,
+            "Frequency": 7,
+            "Monetary": 1032.58,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12600.0",
+            "Country": "Germany",
+            "Recency": 29,
+            "Frequency": 10,
+            "Monetary": 2599.04,
+            "UniqueCategories": 26,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12601.0",
+            "Country": "Germany",
+            "Recency": 190,
+            "Frequency": 5,
+            "Monetary": 577.0600000000001,
+            "UniqueCategories": 18,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12602.0",
+            "Country": "France",
+            "Recency": 59,
+            "Frequency": 1,
+            "Monetary": 153.12,
+            "UniqueCategories": 5,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12603.0",
+            "Country": "Germany",
+            "Recency": 22,
+            "Frequency": 1,
+            "Monetary": 739.1999999999999,
+            "UniqueCategories": 2,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12604.0",
+            "Country": "France",
+            "Recency": 79,
+            "Frequency": 2,
+            "Monetary": 254.18,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12607.0",
+            "Country": "USA",
+            "Recency": 60,
+            "Frequency": 1,
+            "Monetary": 1579.51,
+            "UniqueCategories": 49,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12609.0",
+            "Country": "Germany",
+            "Recency": 78,
+            "Frequency": 3,
+            "Monetary": 1126.85,
+            "UniqueCategories": 37,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12610.0",
+            "Country": "Italy",
+            "Recency": 23,
+            "Frequency": 5,
+            "Monetary": 2099.54,
+            "UniqueCategories": 47,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12611.0",
+            "Country": "Italy",
+            "Recency": 52,
+            "Frequency": 1,
+            "Monetary": 1193.32,
+            "UniqueCategories": 37,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12612.0",
+            "Country": "Germany",
+            "Recency": 74,
+            "Frequency": 1,
+            "Monetary": 704.0400000000001,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12613.0",
+            "Country": "Germany",
+            "Recency": 57,
+            "Frequency": 5,
+            "Monetary": 3344.38,
+            "UniqueCategories": 58,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12614.0",
+            "Country": "Germany",
+            "Recency": 278,
+            "Frequency": 1,
+            "Monetary": 315.6,
+            "UniqueCategories": 16,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12615.0",
+            "Country": "France",
+            "Recency": 2,
+            "Frequency": 4,
+            "Monetary": 2291.19,
+            "UniqueCategories": 53,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12616.0",
+            "Country": "France",
+            "Recency": 95,
+            "Frequency": 2,
+            "Monetary": 713.3,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12617.0",
+            "Country": "France",
+            "Recency": 29,
+            "Frequency": 1,
+            "Monetary": 355.53,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12618.0",
+            "Country": "Italy",
+            "Recency": 22,
+            "Frequency": 1,
+            "Monetary": 177.31,
+            "UniqueCategories": 9,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12619.0",
+            "Country": "Germany",
+            "Recency": 16,
+            "Frequency": 9,
+            "Monetary": 3641.24,
+            "UniqueCategories": 24,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12620.0",
+            "Country": "France",
+            "Recency": 15,
+            "Frequency": 3,
+            "Monetary": 1339.41,
+            "UniqueCategories": 53,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12621.0",
+            "Country": "Germany",
+            "Recency": 2,
+            "Frequency": 20,
+            "Monetary": 13689.67,
+            "UniqueCategories": 130,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12622.0",
+            "Country": "Germany",
+            "Recency": 232,
+            "Frequency": 1,
+            "Monetary": 180.1,
+            "UniqueCategories": 11,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12623.0",
+            "Country": "Germany",
+            "Recency": 276,
+            "Frequency": 1,
+            "Monetary": 305.1,
+            "UniqueCategories": 12,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12624.0",
+            "Country": "France",
+            "Recency": 106,
+            "Frequency": 2,
+            "Monetary": 641.13,
+            "UniqueCategories": 31,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12625.0",
+            "Country": "Germany",
+            "Recency": 212,
+            "Frequency": 2,
+            "Monetary": 2683.82,
+            "UniqueCategories": 45,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12626.0",
+            "Country": "Germany",
+            "Recency": 23,
+            "Frequency": 9,
+            "Monetary": 6620.48,
+            "UniqueCategories": 107,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12627.0",
+            "Country": "Germany",
+            "Recency": 11,
+            "Frequency": 7,
+            "Monetary": 4478.53,
+            "UniqueCategories": 76,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12628.0",
+            "Country": "Germany",
+            "Recency": 4,
+            "Frequency": 3,
+            "Monetary": 786.46,
+            "UniqueCategories": 20,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12630.0",
+            "Country": "Finland",
+            "Recency": 10,
+            "Frequency": 2,
+            "Monetary": 1270.88,
+            "UniqueCategories": 38,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12631.0",
+            "Country": "Finland",
+            "Recency": 57,
+            "Frequency": 1,
+            "Monetary": 640.5,
+            "UniqueCategories": 15,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12633.0",
+            "Country": "Germany",
+            "Recency": 59,
+            "Frequency": 4,
+            "Monetary": 2163.98,
+            "UniqueCategories": 43,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12635.0",
+            "Country": "Germany",
+            "Recency": 90,
+            "Frequency": 2,
+            "Monetary": 1689.18,
+            "UniqueCategories": 56,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12637.0",
+            "Country": "France",
+            "Recency": 67,
+            "Frequency": 8,
+            "Monetary": 6021.9,
+            "UniqueCategories": 86,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12638.0",
+            "Country": "Sweden",
+            "Recency": 33,
+            "Frequency": 1,
+            "Monetary": 671.69,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12639.0",
+            "Country": "Sweden",
+            "Recency": 239,
+            "Frequency": 1,
+            "Monetary": 486.1,
+            "UniqueCategories": 16,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12640.0",
+            "Country": "France",
+            "Recency": 24,
+            "Frequency": 3,
+            "Monetary": 1174.58,
+            "UniqueCategories": 33,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12641.0",
+            "Country": "Sweden",
+            "Recency": 115,
+            "Frequency": 1,
+            "Monetary": 185.9,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12642.0",
+            "Country": "Germany",
+            "Recency": 25,
+            "Frequency": 3,
+            "Monetary": 1013.26,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12643.0",
+            "Country": "France",
+            "Recency": 128,
+            "Frequency": 6,
+            "Monetary": 3344.64,
+            "UniqueCategories": 7,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12644.0",
+            "Country": "Germany",
+            "Recency": 130,
+            "Frequency": 1,
+            "Monetary": 477.91,
+            "UniqueCategories": 14,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12645.0",
+            "Country": "Germany",
+            "Recency": 34,
+            "Frequency": 4,
+            "Monetary": 1775.18,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12646.0",
+            "Country": "USA",
+            "Recency": 5,
+            "Frequency": 2,
+            "Monetary": 1346.97,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12647.0",
+            "Country": "Germany",
+            "Recency": 22,
+            "Frequency": 12,
+            "Monetary": 3722.82,
+            "UniqueCategories": 40,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12648.0",
+            "Country": "Germany",
+            "Recency": 155,
+            "Frequency": 1,
+            "Monetary": 318.05,
+            "UniqueCategories": 11,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12649.0",
+            "Country": "Germany",
+            "Recency": 107,
+            "Frequency": 3,
+            "Monetary": 623.51,
+            "UniqueCategories": 25,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12650.0",
+            "Country": "France",
+            "Recency": 3,
+            "Frequency": 1,
+            "Monetary": 314.44,
+            "UniqueCategories": 15,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12651.0",
+            "Country": "France",
+            "Recency": 335,
+            "Frequency": 1,
+            "Monetary": 114.0,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12652.0",
+            "Country": "France",
+            "Recency": 331,
+            "Frequency": 1,
+            "Monetary": 919.98,
+            "UniqueCategories": 33,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12653.0",
+            "Country": "Israel",
+            "Recency": 149,
+            "Frequency": 2,
+            "Monetary": 2209.85,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12654.0",
+            "Country": "Germany",
+            "Recency": 11,
+            "Frequency": 5,
+            "Monetary": 601.98,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12656.0",
+            "Country": "France",
+            "Recency": 17,
+            "Frequency": 5,
+            "Monetary": 4051.17,
+            "UniqueCategories": 38,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12657.0",
+            "Country": "France",
+            "Recency": 11,
+            "Frequency": 4,
+            "Monetary": 1643.18,
+            "UniqueCategories": 25,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12658.0",
+            "Country": "Germany",
+            "Recency": 19,
+            "Frequency": 1,
+            "Monetary": 686.05,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12659.0",
+            "Country": "France",
+            "Recency": 30,
+            "Frequency": 1,
+            "Monetary": 91.68,
+            "UniqueCategories": 5,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12660.0",
+            "Country": "France",
+            "Recency": 11,
+            "Frequency": 1,
+            "Monetary": 245.1,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12662.0",
+            "Country": "Germany",
+            "Recency": 1,
+            "Frequency": 11,
+            "Monetary": 3849.78,
+            "UniqueCategories": 68,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12664.0",
+            "Country": "Finland",
+            "Recency": 8,
+            "Frequency": 9,
+            "Monetary": 4881.88,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12665.0",
+            "Country": "Germany",
+            "Recency": 325,
+            "Frequency": 1,
+            "Monetary": 63.0,
+            "UniqueCategories": 3,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12667.0",
+            "Country": "Finland",
+            "Recency": 58,
+            "Frequency": 1,
+            "Monetary": 620.13,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12668.0",
+            "Country": "Germany",
+            "Recency": 12,
+            "Frequency": 4,
+            "Monetary": 3807.15,
+            "UniqueCategories": 56,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12669.0",
+            "Country": "France",
+            "Recency": 151,
+            "Frequency": 3,
+            "Monetary": 2744.0299999999997,
+            "UniqueCategories": 48,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12670.0",
+            "Country": "France",
+            "Recency": 10,
+            "Frequency": 5,
+            "Monetary": 2996.05,
+            "UniqueCategories": 33,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12672.0",
+            "Country": "France",
+            "Recency": 330,
+            "Frequency": 1,
+            "Monetary": 225.89999999999998,
+            "UniqueCategories": 8,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12673.0",
+            "Country": "Germany",
+            "Recency": 5,
+            "Frequency": 2,
+            "Monetary": 610.52,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12674.0",
+            "Country": "France",
+            "Recency": 39,
+            "Frequency": 4,
+            "Monetary": 1970.6,
+            "UniqueCategories": 32,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12676.0",
+            "Country": "Sweden",
+            "Recency": 25,
+            "Frequency": 6,
+            "Monetary": 1331.39,
+            "UniqueCategories": 21,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12678.0",
+            "Country": "France",
+            "Recency": 42,
+            "Frequency": 12,
+            "Monetary": 17628.46,
+            "UniqueCategories": 46,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12679.0",
+            "Country": "France",
+            "Recency": 59,
+            "Frequency": 4,
+            "Monetary": 1113.02,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12680.0",
+            "Country": "France",
+            "Recency": 1,
+            "Frequency": 4,
+            "Monetary": 862.81,
+            "UniqueCategories": 21,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12681.0",
+            "Country": "France",
+            "Recency": 15,
+            "Frequency": 22,
+            "Monetary": 13787.54,
+            "UniqueCategories": 128,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12682.0",
+            "Country": "France",
+            "Recency": 4,
+            "Frequency": 31,
+            "Monetary": 12288.22,
+            "UniqueCategories": 90,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12683.0",
+            "Country": "France",
+            "Recency": 4,
+            "Frequency": 15,
+            "Monetary": 8476.57,
+            "UniqueCategories": 84,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12684.0",
+            "Country": "France",
+            "Recency": 8,
+            "Frequency": 7,
+            "Monetary": 2283.63,
+            "UniqueCategories": 38,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12685.0",
+            "Country": "France",
+            "Recency": 28,
+            "Frequency": 6,
+            "Monetary": 2863.08,
+            "UniqueCategories": 64,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12686.0",
+            "Country": "France",
+            "Recency": 372,
+            "Frequency": 1,
+            "Monetary": 89.14,
+            "UniqueCategories": 6,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12688.0",
+            "Country": "Israel",
+            "Recency": 114,
+            "Frequency": 1,
+            "Monetary": 4873.8099999999995,
+            "UniqueCategories": 79,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12689.0",
+            "Country": "France",
+            "Recency": 26,
+            "Frequency": 2,
+            "Monetary": 1247.61,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12690.0",
+            "Country": "France",
+            "Recency": 206,
+            "Frequency": 1,
+            "Monetary": 389.01,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12691.0",
+            "Country": "France",
+            "Recency": 28,
+            "Frequency": 6,
+            "Monetary": 1035.8,
+            "UniqueCategories": 15,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12693.0",
+            "Country": "Germany",
+            "Recency": 127,
+            "Frequency": 4,
+            "Monetary": 855.91,
+            "UniqueCategories": 22,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12694.0",
+            "Country": "France",
+            "Recency": 70,
+            "Frequency": 2,
+            "Monetary": 869.67,
+            "UniqueCategories": 19,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12695.0",
+            "Country": "France",
+            "Recency": 7,
+            "Frequency": 4,
+            "Monetary": 582.1,
+            "UniqueCategories": 16,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12697.0",
+            "Country": "Sweden",
+            "Recency": 29,
+            "Frequency": 3,
+            "Monetary": 957.59,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12700.0",
+            "Country": "France",
+            "Recency": 8,
+            "Frequency": 4,
+            "Monetary": 4939.99,
+            "UniqueCategories": 84,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12701.0",
+            "Country": "Germany",
+            "Recency": 80,
+            "Frequency": 2,
+            "Monetary": 797.71,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12702.0",
+            "Country": "Germany",
+            "Recency": 20,
+            "Frequency": 1,
+            "Monetary": 219.0,
+            "UniqueCategories": 9,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12703.0",
+            "Country": "Germany",
+            "Recency": 71,
+            "Frequency": 1,
+            "Monetary": 283.55,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12704.0",
+            "Country": "Finland",
+            "Recency": 7,
+            "Frequency": 8,
+            "Monetary": 2340.84,
+            "UniqueCategories": 40,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12705.0",
+            "Country": "Germany",
+            "Recency": 15,
+            "Frequency": 9,
+            "Monetary": 6868.29,
+            "UniqueCategories": 107,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12707.0",
+            "Country": "France",
+            "Recency": 292,
+            "Frequency": 1,
+            "Monetary": 603.42,
+            "UniqueCategories": 20,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12708.0",
+            "Country": "Germany",
+            "Recency": 30,
+            "Frequency": 10,
+            "Monetary": 2712.91,
+            "UniqueCategories": 48,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12709.0",
+            "Country": "Germany",
+            "Recency": 15,
+            "Frequency": 15,
+            "Monetary": 9736.52,
+            "UniqueCategories": 49,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12710.0",
+            "Country": "Germany",
+            "Recency": 97,
+            "Frequency": 3,
+            "Monetary": 1149.02,
+            "UniqueCategories": 39,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12712.0",
+            "Country": "Germany",
+            "Recency": 29,
+            "Frequency": 13,
+            "Monetary": 4396.13,
+            "UniqueCategories": 43,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12713.0",
+            "Country": "Germany",
+            "Recency": 1,
+            "Frequency": 1,
+            "Monetary": 848.55,
+            "UniqueCategories": 24,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12714.0",
+            "Country": "France",
+            "Recency": 9,
+            "Frequency": 5,
+            "Monetary": 4708.86,
+            "UniqueCategories": 89,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12715.0",
+            "Country": "Sweden",
+            "Recency": 106,
+            "Frequency": 1,
+            "Monetary": 353.86,
+            "UniqueCategories": 12,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12716.0",
+            "Country": "France",
+            "Recency": 4,
+            "Frequency": 2,
+            "Monetary": 1053.49,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12717.0",
+            "Country": "Greece",
+            "Recency": 151,
+            "Frequency": 2,
+            "Monetary": 1030.98,
+            "UniqueCategories": 34,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12718.0",
+            "Country": "France",
+            "Recency": 71,
+            "Frequency": 1,
+            "Monetary": 238.25,
+            "UniqueCategories": 14,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12719.0",
+            "Country": "France",
+            "Recency": 5,
+            "Frequency": 2,
+            "Monetary": 644.95,
+            "UniqueCategories": 26,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12720.0",
+            "Country": "Germany",
+            "Recency": 3,
+            "Frequency": 25,
+            "Monetary": 5781.73,
+            "UniqueCategories": 78,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12721.0",
+            "Country": "France",
+            "Recency": 32,
+            "Frequency": 6,
+            "Monetary": 2656.13,
+            "UniqueCategories": 61,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12722.0",
+            "Country": "France",
+            "Recency": 85,
+            "Frequency": 4,
+            "Monetary": 997.63,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12723.0",
+            "Country": "France",
+            "Recency": 4,
+            "Frequency": 5,
+            "Monetary": 725.07,
+            "UniqueCategories": 31,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12724.0",
+            "Country": "France",
+            "Recency": 5,
+            "Frequency": 4,
+            "Monetary": 1031.41,
+            "UniqueCategories": 21,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12725.0",
+            "Country": "Italy",
+            "Recency": 371,
+            "Frequency": 1,
+            "Monetary": 427.8,
+            "UniqueCategories": 19,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12726.0",
+            "Country": "France",
+            "Recency": 28,
+            "Frequency": 7,
+            "Monetary": 2609.1,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12727.0",
+            "Country": "France",
+            "Recency": 11,
+            "Frequency": 7,
+            "Monetary": 3980.7,
+            "UniqueCategories": 59,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12728.0",
+            "Country": "France",
+            "Recency": 71,
+            "Frequency": 4,
+            "Monetary": 836.33,
+            "UniqueCategories": 28,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12729.0",
+            "Country": "France",
+            "Recency": 114,
+            "Frequency": 1,
+            "Monetary": 453.01,
+            "UniqueCategories": 15,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12731.0",
+            "Country": "France",
+            "Recency": 24,
+            "Frequency": 12,
+            "Monetary": 18895.91,
+            "UniqueCategories": 51,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12732.0",
+            "Country": "France",
+            "Recency": 180,
+            "Frequency": 1,
+            "Monetary": 236.26000000000002,
+            "UniqueCategories": 7,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12733.0",
+            "Country": "USA",
+            "Recency": 234,
+            "Frequency": 1,
+            "Monetary": 383.95,
+            "UniqueCategories": 13,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12734.0",
+            "Country": "France",
+            "Recency": 353,
+            "Frequency": 1,
+            "Monetary": 110.39999999999999,
+            "UniqueCategories": 2,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12735.0",
+            "Country": "France",
+            "Recency": 315,
+            "Frequency": 2,
+            "Monetary": 779.5699999999999,
+            "UniqueCategories": 26,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12736.0",
+            "Country": "France",
+            "Recency": 333,
+            "Frequency": 1,
+            "Monetary": 234.0,
+            "UniqueCategories": 3,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12738.0",
+            "Country": "Germany",
+            "Recency": 372,
+            "Frequency": 1,
+            "Monetary": 155.35,
+            "UniqueCategories": 7,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12739.0",
+            "Country": "United Arab Emirates",
+            "Recency": 78,
+            "Frequency": 2,
+            "Monetary": 1013.04,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12740.0",
+            "Country": "France",
+            "Recency": 64,
+            "Frequency": 1,
+            "Monetary": 427.6,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12743.0",
+            "Country": "Unspecified",
+            "Recency": 134,
+            "Frequency": 2,
+            "Monetary": 546.43,
+            "UniqueCategories": 68,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12744.0",
+            "Country": "Singapore",
+            "Recency": 52,
+            "Frequency": 7,
+            "Monetary": 21279.29,
+            "UniqueCategories": 85,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12750.0",
+            "Country": "Poland",
+            "Recency": 129,
+            "Frequency": 1,
+            "Monetary": 275.88,
+            "UniqueCategories": 10,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12752.0",
+            "Country": "Norway",
+            "Recency": 81,
+            "Frequency": 1,
+            "Monetary": 4366.78,
+            "UniqueCategories": 26,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12753.0",
+            "Country": "Japan",
+            "Recency": 23,
+            "Frequency": 6,
+            "Monetary": 21429.39,
+            "UniqueCategories": 71,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12754.0",
+            "Country": "Japan",
+            "Recency": 236,
+            "Frequency": 3,
+            "Monetary": 3010.74,
+            "UniqueCategories": 24,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12755.0",
+            "Country": "Japan",
+            "Recency": 281,
+            "Frequency": 2,
+            "Monetary": 3811.95,
+            "UniqueCategories": 4,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12756.0",
+            "Country": "Japan",
+            "Recency": 87,
+            "Frequency": 1,
+            "Monetary": 112.07999999999998,
+            "UniqueCategories": 3,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12757.0",
+            "Country": "Portugal",
+            "Recency": 16,
+            "Frequency": 13,
+            "Monetary": 7857.1,
+            "UniqueCategories": 88,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12758.0",
+            "Country": "Portugal",
+            "Recency": 117,
+            "Frequency": 2,
+            "Monetary": 2791.59,
+            "UniqueCategories": 37,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12759.0",
+            "Country": "Netherlands",
+            "Recency": 52,
+            "Frequency": 3,
+            "Monetary": 1531.44,
+            "UniqueCategories": 50,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12762.0",
+            "Country": "Portugal",
+            "Recency": 8,
+            "Frequency": 2,
+            "Monetary": 1898.52,
+            "UniqueCategories": 42,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12763.0",
+            "Country": "Japan",
+            "Recency": 138,
+            "Frequency": 2,
+            "Monetary": 494.08,
+            "UniqueCategories": 8,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12764.0",
+            "Country": "Lebanon",
+            "Recency": 317,
+            "Frequency": 1,
+            "Monetary": 1693.88,
+            "UniqueCategories": 38,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12766.0",
+            "Country": "Portugal",
+            "Recency": 4,
+            "Frequency": 7,
+            "Monetary": 6989.63,
+            "UniqueCategories": 77,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12769.0",
+            "Country": "Brazil",
+            "Recency": 239,
+            "Frequency": 1,
+            "Monetary": 1143.6,
+            "UniqueCategories": 22,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12770.0",
+            "Country": "Japan",
+            "Recency": 211,
+            "Frequency": 1,
+            "Monetary": 1351.45,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12772.0",
+            "Country": "Portugal",
+            "Recency": 60,
+            "Frequency": 1,
+            "Monetary": 892.47,
+            "UniqueCategories": 37,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12775.0",
+            "Country": "Netherlands",
+            "Recency": 17,
+            "Frequency": 5,
+            "Monetary": 1386.04,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12778.0",
+            "Country": "Netherlands",
+            "Recency": 20,
+            "Frequency": 6,
+            "Monetary": 822.23,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12779.0",
+            "Country": "Poland",
+            "Recency": 38,
+            "Frequency": 8,
+            "Monetary": 3981.36,
+            "UniqueCategories": 46,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12781.0",
+            "Country": "Czech Republic",
+            "Recency": 64,
+            "Frequency": 2,
+            "Monetary": 826.74,
+            "UniqueCategories": 22,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12782.0",
+            "Country": "Portugal",
+            "Recency": 5,
+            "Frequency": 5,
+            "Monetary": 2330.92,
+            "UniqueCategories": 52,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12783.0",
+            "Country": "Portugal",
+            "Recency": 2,
+            "Frequency": 6,
+            "Monetary": 2225.91,
+            "UniqueCategories": 53,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12784.0",
+            "Country": "Portugal",
+            "Recency": 9,
+            "Frequency": 2,
+            "Monetary": 574.42,
+            "UniqueCategories": 30,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12785.0",
+            "Country": "Portugal",
+            "Recency": 364,
+            "Frequency": 1,
+            "Monetary": 311.95,
+            "UniqueCategories": 8,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12787.0",
+            "Country": "Netherlands",
+            "Recency": 10,
+            "Frequency": 3,
+            "Monetary": 463.66,
+            "UniqueCategories": 14,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12789.0",
+            "Country": "Netherlands",
+            "Recency": 65,
+            "Frequency": 1,
+            "Monetary": 91.85,
+            "UniqueCategories": 4,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12790.0",
+            "Country": "Netherlands",
+            "Recency": 192,
+            "Frequency": 1,
+            "Monetary": 324.92,
+            "UniqueCategories": 14,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12791.0",
+            "Country": "Netherlands",
+            "Recency": 374,
+            "Frequency": 1,
+            "Monetary": 192.60000000000002,
+            "UniqueCategories": 2,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12792.0",
+            "Country": "Portugal",
+            "Recency": 257,
+            "Frequency": 1,
+            "Monetary": 400.53999999999996,
+            "UniqueCategories": 21,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12793.0",
+            "Country": "Portugal",
+            "Recency": 335,
+            "Frequency": 2,
+            "Monetary": 545.48,
+            "UniqueCategories": 11,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12794.0",
+            "Country": "Portugal",
+            "Recency": 53,
+            "Frequency": 2,
+            "Monetary": 860.41,
+            "UniqueCategories": 24,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12795.0",
+            "Country": "Portugal",
+            "Recency": 19,
+            "Frequency": 1,
+            "Monetary": 430.48,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12797.0",
+            "Country": "Portugal",
+            "Recency": 366,
+            "Frequency": 1,
+            "Monetary": 254.03,
+            "UniqueCategories": 9,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12798.0",
+            "Country": "Japan",
+            "Recency": 10,
+            "Frequency": 3,
+            "Monetary": 6977.04,
+            "UniqueCategories": 5,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12802.0",
+            "Country": "Netherlands",
+            "Recency": 187,
+            "Frequency": 1,
+            "Monetary": 427.58,
+            "UniqueCategories": 20,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12808.0",
+            "Country": "Portugal",
+            "Recency": 37,
+            "Frequency": 3,
+            "Monetary": 483.65000000000003,
+            "UniqueCategories": 17,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12809.0",
+            "Country": "Portugal",
+            "Recency": 178,
+            "Frequency": 1,
+            "Monetary": 489.31,
+            "UniqueCategories": 15,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12811.0",
+            "Country": "Portugal",
+            "Recency": 261,
+            "Frequency": 3,
+            "Monetary": 514.85,
+            "UniqueCategories": 16,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12812.0",
+            "Country": "Japan",
+            "Recency": 45,
+            "Frequency": 1,
+            "Monetary": 229.64000000000001,
+            "UniqueCategories": 6,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12814.0",
+            "Country": "Poland",
+            "Recency": 102,
+            "Frequency": 1,
+            "Monetary": 125.92,
+            "UniqueCategories": 2,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12815.0",
+            "Country": "Poland",
+            "Recency": 148,
+            "Frequency": 2,
+            "Monetary": 1063.46,
+            "UniqueCategories": 18,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12816.0",
+            "Country": "Poland",
+            "Recency": 96,
+            "Frequency": 2,
+            "Monetary": 572.2,
+            "UniqueCategories": 22,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12817.0",
+            "Country": "Austria",
+            "Recency": 281,
+            "Frequency": 1,
+            "Monetary": 166.04,
+            "UniqueCategories": 4,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12818.0",
+            "Country": "Austria",
+            "Recency": 262,
+            "Frequency": 1,
+            "Monetary": 1542.08,
+            "UniqueCategories": 10,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12865.0",
+            "Country": "Austria",
+            "Recency": 26,
+            "Frequency": 2,
+            "Monetary": 1568.23,
+            "UniqueCategories": 46,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "12866.0",
+            "Country": "Belgium",
+            "Recency": 283,
+            "Frequency": 1,
+            "Monetary": 559.12,
+            "UniqueCategories": 13,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "12876.0",
+            "Country": "Belgium",
+            "Recency": 58,
+            "Frequency": 2,
+            "Monetary": 2218.02,
+            "UniqueCategories": 33,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13492.0",
+            "Country": "Switzerland",
+            "Recency": 136,
+            "Frequency": 3,
+            "Monetary": 1269.84,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13493.0",
+            "Country": "Switzerland",
+            "Recency": 275,
+            "Frequency": 2,
+            "Monetary": 618.63,
+            "UniqueCategories": 4,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "13501.0",
+            "Country": "Switzerland",
+            "Recency": 288,
+            "Frequency": 1,
+            "Monetary": 1340.32,
+            "UniqueCategories": 36,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "13505.0",
+            "Country": "Switzerland",
+            "Recency": 73,
+            "Frequency": 4,
+            "Monetary": 4393.63,
+            "UniqueCategories": 85,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13520.0",
+            "Country": "Switzerland",
+            "Recency": 59,
+            "Frequency": 6,
+            "Monetary": 3624.35,
+            "UniqueCategories": 25,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13809.0",
+            "Country": "Cyprus",
+            "Recency": 305,
+            "Frequency": 1,
+            "Monetary": 155.05,
+            "UniqueCategories": 10,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "13810.0",
+            "Country": "Germany",
+            "Recency": 29,
+            "Frequency": 3,
+            "Monetary": 1499.01,
+            "UniqueCategories": 23,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13811.0",
+            "Country": "Germany",
+            "Recency": 184,
+            "Frequency": 3,
+            "Monetary": 814.5,
+            "UniqueCategories": 3,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "13812.0",
+            "Country": "Germany",
+            "Recency": 42,
+            "Frequency": 3,
+            "Monetary": 539.0,
+            "UniqueCategories": 24,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13813.0",
+            "Country": "Germany",
+            "Recency": 40,
+            "Frequency": 4,
+            "Monetary": 1366.8600000000001,
+            "UniqueCategories": 34,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13814.0",
+            "Country": "Germany",
+            "Recency": 92,
+            "Frequency": 2,
+            "Monetary": 1579.12,
+            "UniqueCategories": 19,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13815.0",
+            "Country": "Germany",
+            "Recency": 22,
+            "Frequency": 4,
+            "Monetary": 4027.36,
+            "UniqueCategories": 62,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13816.0",
+            "Country": "Germany",
+            "Recency": 24,
+            "Frequency": 2,
+            "Monetary": 571.6700000000001,
+            "UniqueCategories": 15,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13817.0",
+            "Country": "Germany",
+            "Recency": 29,
+            "Frequency": 2,
+            "Monetary": 382.98,
+            "UniqueCategories": 12,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "13919.0",
+            "Country": "Denmark",
+            "Recency": 59,
+            "Frequency": 2,
+            "Monetary": 384.81,
+            "UniqueCategories": 11,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14016.0",
+            "Country": "EIRE",
+            "Recency": 162,
+            "Frequency": 4,
+            "Monetary": 4341.21,
+            "UniqueCategories": 95,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14156.0",
+            "Country": "EIRE",
+            "Recency": 10,
+            "Frequency": 55,
+            "Monetary": 117379.63,
+            "UniqueCategories": 251,
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "14265.0",
+            "Country": "Unspecified",
+            "Recency": 109,
+            "Frequency": 2,
+            "Monetary": 530.18,
+            "UniqueCategories": 24,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14277.0",
+            "Country": "France",
+            "Recency": 15,
+            "Frequency": 3,
+            "Monetary": 4216.2,
+            "UniqueCategories": 115,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14335.0",
+            "Country": "Germany",
+            "Recency": 16,
+            "Frequency": 2,
+            "Monetary": 468.26,
+            "UniqueCategories": 37,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14439.0",
+            "Country": "Greece",
+            "Recency": 320,
+            "Frequency": 1,
+            "Monetary": 2661.24,
+            "UniqueCategories": 17,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "14442.0",
+            "Country": "Channel Islands",
+            "Recency": 205,
+            "Frequency": 2,
+            "Monetary": 1589.82,
+            "UniqueCategories": 41,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "14566.0",
+            "Country": "Channel Islands",
+            "Recency": 111,
+            "Frequency": 1,
+            "Monetary": 1432.0,
+            "UniqueCategories": 1,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14646.0",
+            "Country": "Netherlands",
+            "Recency": 2,
+            "Frequency": 73,
+            "Monetary": 280206.02,
+            "UniqueCategories": 225,
+            "Cluster_ID": 1
+        },
+        {
+            "CustomerID": "14911.0",
+            "Country": "EIRE",
+            "Recency": 1,
+            "Frequency": 201,
+            "Monetary": 143825.06,
+            "UniqueCategories": 497,
+            "Cluster_ID": 2
+        },
+        {
+            "CustomerID": "14912.0",
+            "Country": "Italy",
+            "Recency": 17,
+            "Frequency": 2,
+            "Monetary": 867.85,
+            "UniqueCategories": 18,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14930.0",
+            "Country": "Channel Islands",
+            "Recency": 109,
+            "Frequency": 3,
+            "Monetary": 2372.86,
+            "UniqueCategories": 62,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14931.0",
+            "Country": "Channel Islands",
+            "Recency": 5,
+            "Frequency": 5,
+            "Monetary": 1257.68,
+            "UniqueCategories": 22,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14932.0",
+            "Country": "Channel Islands",
+            "Recency": 366,
+            "Frequency": 1,
+            "Monetary": 363.53,
+            "UniqueCategories": 11,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "14934.0",
+            "Country": "Channel Islands",
+            "Recency": 82,
+            "Frequency": 2,
+            "Monetary": 1890.94,
+            "UniqueCategories": 42,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14935.0",
+            "Country": "Channel Islands",
+            "Recency": 297,
+            "Frequency": 1,
+            "Monetary": 1784.71,
+            "UniqueCategories": 5,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "14936.0",
+            "Country": "Channel Islands",
+            "Recency": 34,
+            "Frequency": 8,
+            "Monetary": 8137.02,
+            "UniqueCategories": 85,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "14937.0",
+            "Country": "Channel Islands",
+            "Recency": 57,
+            "Frequency": 3,
+            "Monetary": 1621.88,
+            "UniqueCategories": 13,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "15108.0",
+            "Country": "European Community",
+            "Recency": 142,
+            "Frequency": 4,
+            "Monetary": 1300.25,
+            "UniqueCategories": 29,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "15332.0",
+            "Country": "Lithuania",
+            "Recency": 366,
+            "Frequency": 4,
+            "Monetary": 1661.06,
+            "UniqueCategories": 15,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "15388.0",
+            "Country": "Canada",
+            "Recency": 270,
+            "Frequency": 1,
+            "Monetary": 140.54,
+            "UniqueCategories": 10,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "15480.0",
+            "Country": "Malta",
+            "Recency": 116,
+            "Frequency": 1,
+            "Monetary": 905.5,
+            "UniqueCategories": 25,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "16320.0",
+            "Country": "Unspecified",
+            "Recency": 172,
+            "Frequency": 2,
+            "Monetary": 1038.46,
+            "UniqueCategories": 32,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "16321.0",
+            "Country": "Australia",
+            "Recency": 72,
+            "Frequency": 5,
+            "Monetary": 373.65000000000003,
+            "UniqueCategories": 5,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17097.0",
+            "Country": "Spain",
+            "Recency": 2,
+            "Frequency": 8,
+            "Monetary": 954.42,
+            "UniqueCategories": 76,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17404.0",
+            "Country": "Sweden",
+            "Recency": 4,
+            "Frequency": 15,
+            "Monetary": 31906.82,
+            "UniqueCategories": 49,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17443.0",
+            "Country": "Canada",
+            "Recency": 220,
+            "Frequency": 1,
+            "Monetary": 534.24,
+            "UniqueCategories": 1,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "17444.0",
+            "Country": "Canada",
+            "Recency": 148,
+            "Frequency": 3,
+            "Monetary": 2940.04,
+            "UniqueCategories": 74,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17508.0",
+            "Country": "Greece",
+            "Recency": 281,
+            "Frequency": 1,
+            "Monetary": 387.31,
+            "UniqueCategories": 15,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "17828.0",
+            "Country": "Malta",
+            "Recency": 23,
+            "Frequency": 4,
+            "Monetary": 1820.09,
+            "UniqueCategories": 35,
+            "Cluster_ID": 0
+        },
+        {
+            "CustomerID": "17829.0",
+            "Country": "United Arab Emirates",
+            "Recency": 299,
+            "Frequency": 1,
+            "Monetary": 889.24,
+            "UniqueCategories": 24,
+            "Cluster_ID": 3
+        },
+        {
+            "CustomerID": "17844.0",
+            "Country": "Canada",
+            "Recency": 107,
+            "Frequency": 1,
+            "Monetary": 51.559999999999995,
+            "UniqueCategories": 2,
+            "Cluster_ID": 0
+        }
+    ],
+    "cluster_summary": [
+        {
+            "Cluster_ID": 0,
+            "CustomerCount": 329,
+            "AvgRecency": 45.90577507598784,
+            "AvgFrequency": 4.419452887537994,
+            "AvgMonetary": 2699.2734650455927,
+            "AvgUniqueCategories": 38.12462006079027
+        },
+        {
+            "Cluster_ID": 1,
+            "CustomerCount": 1,
+            "AvgRecency": 2.0,
+            "AvgFrequency": 73.0,
+            "AvgMonetary": 280206.02,
+            "AvgUniqueCategories": 225.0
+        },
+        {
+            "Cluster_ID": 2,
+            "CustomerCount": 3,
+            "AvgRecency": 11.666666666666666,
+            "AvgFrequency": 92.33333333333333,
+            "AvgMonetary": 128706.40666666666,
+            "AvgUniqueCategories": 297.0
+        },
+        {
+            "Cluster_ID": 3,
+            "CustomerCount": 93,
+            "AvgRecency": 271.0430107526882,
+            "AvgFrequency": 1.4193548387096775,
+            "AvgMonetary": 784.611935483871,
+            "AvgUniqueCategories": 15.516129032258064
+        }
+    ]
+}

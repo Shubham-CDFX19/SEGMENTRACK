@@ -15,15 +15,8 @@ import {
   ChevronRight
 } from 'lucide-react';
 import StatCard from '../components/dashboard/StatCard';
-import MemberActivity from '../components/dashboard/MemberActivity';
-import RevenueChart from '../components/dashboard/RevenueChart';
-import RecentMembers from '../components/dashboard/RecentMembers';
-import UpcomingClasses from '../components/dashboard/UpcomingClasses';
 import { useState, useEffect } from 'react';
 import { 
-  PieChart, 
-  Pie, 
-  Cell, 
   BarChart, 
   Bar, 
   XAxis, 
@@ -31,86 +24,62 @@ import {
   CartesianGrid, 
   Tooltip, 
   Legend,
-  LabelList
+  LabelList,
+  ResponsiveContainer,
+  Cell
 } from 'recharts';
+import { useData } from '../DataContext';
 
-const COLORS = ['#FBB1BD', '#A5F3FC', '#C4B5FD', '#FDE68A', '#6EE7B7', '#FCA5A5'];
+const COLORS = ['#A5F3FC', '#FBB1BD', '#FDE68A', '#C4B5FD', '#6EE7B7'];
 
 const Analytics = () => {
-  const [clusters, setClusters] = useState([]);
-  const [purchaseGroups, setPurchaseGroups] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [recentMembers, setRecentMembers] = useState([]);
+  const { segmentationData } = useData();
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    // Fetch clusters.json
-    fetch('/clusters.json')
-      .then(response => response.json())
-      .then(data => {
-        setClusters(data.clusters || []);
-        setPurchaseGroups(data.purchaseGroups || []);
-      })
-      .catch(error => {
-        console.error('Error fetching clusters.json:', error);
-      });
-
-    // Fetch segment.csv and process the first 10 CustomerIDs
-    fetch('/segment.csv')
-      .then(response => response.text())
-      .then(csvText => {
-        const rows = csvText.split('\n').filter(row => row.trim() !== ''); // Split into rows and remove empty lines
-        const headers = rows[0].split(',').map(header => header.trim()); // Extract headers
-        const customerIdIndex = headers.indexOf('CustomerID'); // Find CustomerID column index
-
-        if (customerIdIndex === -1) {
-          console.error('CustomerID column not found in segment.csv');
-          return;
-        }
-
-        const data = rows.slice(1, 11).map(row => {
-          const columns = row.split(',').map(col => col.trim());
-          return { CustomerID: columns[customerIdIndex] };
-        });
-        setRecentMembers(data);
-      })
-      .catch(error => {
-        console.error('Error fetching segment.csv:', error);
-      })
-      .finally(() => setLoading(false));
-  }, []);
-
-  if (loading) return <div className="text-center p-4">Loading...</div>;
-
-  // Prepare data for charts
-  const clusterData = Object.values(clusters.reduce((acc, { Cluster_ID }) => {
-    acc[Cluster_ID] = (acc[Cluster_ID] || 0) + 1;
-    return acc;
-  }, {})).map((value, index) => ({
-    name: `Cluster ${index}`,
-    value,
-    percentage: ((value / clusters.length) * 100).toFixed(2)
+  // Transform cluster data for the horizontal bar chart
+  const clusterData = segmentationData.cluster_summary.map(cluster => ({
+    name: `Cluster ${cluster.Cluster_ID}`,
+    value: cluster.CustomerCount
   }));
-  const purchaseData = purchaseGroups.map(pg => ({ name: `Cust ${pg.CustomerID}`, totalAmount: pg.totalAmount })).slice(0, 10);
 
-  // Custom label for Pie Chart
-  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, value, name, percentage }) => {
-    const RADIAN = Math.PI / 180;
-    const radius = innerRadius + (outerRadius - innerRadius) * 1.2;
-    const x = cx + radius * Math.cos(-midAngle * RADIAN);
-    const y = cy + radius * Math.sin(-midAngle * RADIAN);
+  const purchaseData = segmentationData.customer_segments
+    .sort((a, b) => b.Monetary - a.Monetary)
+    .slice(0, 10)
+    .map(customer => ({
+      name: `Cust ${customer.CustomerID}`,
+      totalAmount: customer.Monetary
+    }));
 
-    return (
-      <text
-        x={x}
-        y={y}
-        fill="#fff"
-        textAnchor={x > cx ? 'start' : 'end'}
-        dominantBaseline="central"
-        fontSize={12}
-      >
-        {`${name}: ${value} (${percentage}%)`}
-      </text>
-    );
+  const recentMembers = segmentationData.customer_segments
+    .sort((a, b) => a.Recency - b.Recency)
+    .slice(0, 10)
+    .map(customer => ({
+      CustomerID: customer.CustomerID
+    }));
+
+  const activeCustomers = segmentationData.customer_segments.filter(c => c.Recency <= 30).length;
+  const weeklyPurchases = segmentationData.customer_segments.filter(c => c.Recency <= 7).length;
+  const purchaseRate = segmentationData.customer_segments.length > 0 
+    ? ((weeklyPurchases / segmentationData.customer_segments.length) * 100).toFixed(0)
+    : 0;
+  const retentionRate = segmentationData.customer_segments.length > 0 
+    ? ((segmentationData.customer_segments.filter(c => c.Frequency > 1).length / segmentationData.customer_segments.length) * 100).toFixed(0)
+    : 0;
+
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="bg-[#1E103C] p-3 rounded-lg shadow-lg border border-gym-purple/30">
+          <p className="text-white font-medium">{label}</p>
+          {payload.map((entry, index) => (
+            <p key={index} className="text-gym-neoncyan">
+              {entry.name}: {entry.value} customers
+            </p>
+          ))}
+        </div>
+      );
+    }
+    return null;
   };
 
   return (
@@ -119,93 +88,104 @@ const Analytics = () => {
         <h1 className="text-2xl font-bold">Customer Segmentation Dashboard</h1>
       </div>
       
-      {/* Stats row */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <StatCard 
           title="Active Customers" 
-          value="254" 
-          subtitle="↑ 12% increase"
+          value={activeCustomers} 
+          subtitle="Customers with purchases in last 30 days"
           icon={Users}
           color="purple"
-          percent={75}
+          percent={segmentationData.customer_segments.length > 0 ? (activeCustomers / segmentationData.customer_segments.length * 100).toFixed(0) : 0}
         />
         <StatCard 
           title="Weekly Purchases" 
-          value="189" 
-          subtitle="↑ 8% increase"
+          value={weeklyPurchases} 
+          subtitle="Purchases in last 7 days"
           icon={Dumbbell}
           color="blue"
-          percent={69}
+          percent={segmentationData.customer_segments.length > 0 ? (weeklyPurchases / segmentationData.customer_segments.length * 100).toFixed(0) : 0}
         />
         <StatCard 
           title="Purchase Rate" 
-          value="86%" 
-          subtitle="↑ 5% increase"
+          value={`${purchaseRate}%`} 
+          subtitle="Customers purchasing weekly"
           icon={Timer}
           color="pink"
-          percent={86}
+          percent={purchaseRate}
         />
         <StatCard 
           title="Retention Rate" 
-          value="92%" 
-          subtitle="↑ 3% increase"
+          value={`${retentionRate}%`} 
+          subtitle="Customers with multiple purchases"
           icon={Award}
           color="cyan"
-          percent={92}
+          percent={retentionRate}
         />
       </div>
       
-      {/* Main content area */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        {/* Left section - 2/3 width */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Customer Clusters */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.4 }}
-            className="bg-card rounded-xl p-5"
+            className="bg-card rounded-xl p-5 shadow-[0_0_20px_rgba(138,43,226,0.5)]"
           >
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg mr-64 font-medium">Cluster of Customers</h3>
+              <h3 className="text-lg mr-64 font-medium">Cluster Customer Counts</h3>
               <button>
                 <MoreVertical size={16} />
               </button>
             </div>
-            <div className="h-72 flex justify-center">
-              <PieChart width={800} height={300}>
-                <Pie
-                  data={clusterData}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={renderCustomizedLabel}
-                  outerRadius={120}
-                  innerRadius={60}
-                  fill="#8884d8"
-                  dataKey="value"
+            <div className="h-96 flex items-center justify-center relative">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart 
+                  data={clusterData} 
+                  layout="vertical" // Horizontal bars
+                  margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
                 >
-                  {clusterData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip formatter={(value) => `${value} customers`} />
-                <Legend 
-                  verticalAlign="bottom" 
-                  height={40} 
-                  iconSize={12} 
-                  wrapperStyle={{ fontSize: '12px', color: '#fff' }}
-                />
-              </PieChart>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+                  <XAxis 
+                    type="number" 
+                    tick={{ fill: '#fff', fontSize: 12 }} 
+                    domain={[0, 'dataMax + 50']} // Extend the axis slightly beyond the max value
+                  />
+                  <YAxis 
+                    dataKey="name" 
+                    type="category" 
+                    tick={{ fill: '#fff', fontSize: 12 }} 
+                  />
+                  <Tooltip content={<CustomTooltip />} />
+                  <Bar 
+                    dataKey="value" 
+                    radius={[0, 10, 10, 0]} // Rounded ends on the right
+                    isAnimationActive={true}
+                    animationDuration={1000} // Smooth animation
+                  >
+                    {clusterData.map((entry, index) => (
+                      <Cell 
+                        key={`cell-${index}`} 
+                        fill={COLORS[index % COLORS.length]} 
+                      />
+                    ))}
+                    <LabelList 
+                      dataKey="value" 
+                      position="right" 
+                      fill="#fff" 
+                      fontSize={12} 
+                      formatter={(value) => `${value} customers`} 
+                    />
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           </motion.div>
           
-          {/* Customer Grouping Based on Purchases */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.4 }}
-            className="bg-card rounded-xl p-5"
+            className="bg-card rounded-xl p-5 shadow-[0_0_20px_rgba(138,43,226,0.5)]"
           >
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-medium">Customer Grouping Based on Purchases</h3>
@@ -214,52 +194,72 @@ const Analytics = () => {
               </button>
             </div>
             <div className="h-72 flex justify-center">
-              <BarChart 
-                width={950} 
-                height={350} 
-                data={purchaseData} 
-                margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-                <XAxis 
-                  dataKey="name" 
-                  angle={-45} 
-                  textAnchor="end" 
-                  height={60} 
-                  interval={0} 
-                  tick={{ fontSize: 12, fill: '#fff' }}
-                />
-                <YAxis tick={{ fill: '#fff' }} />
-                <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
-                <Legend 
-                  verticalAlign="top" 
-                  height={36} 
-                  iconSize={10} 
-                  wrapperStyle={{ fontSize: '12px', color: '#fff' }}
-                />
-                <Bar dataKey="totalAmount" fill="url(#colorUv)">
-                  <LabelList 
-                    dataKey="totalAmount" 
-                    position="top" 
-                    fill="#fff" 
-                    fontSize={12} 
-                    formatter={(value) => `$${value.toFixed(2)}`} 
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart 
+                  data={purchaseData} 
+                  margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+                  <XAxis 
+                    dataKey="name" 
+                    angle={-45} 
+                    textAnchor="end" 
+                    height={60} 
+                    interval={0} 
+                    tick={{ fontSize: 12, fill: '#fff' }}
                   />
-                </Bar>
-                <defs>
-                  <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
-                    <stop offset="95%" stopColor="#8884d8" stopOpacity={0.3}/>
-                  </linearGradient>
-                </defs>
-              </BarChart>
+                  <YAxis tick={{ fill: '#fff', fontSize: 12 }} />
+                  <Tooltip content={<CustomTooltip />} />
+                  <Legend 
+                    verticalAlign="top" 
+                    height={36} 
+                    iconSize={10} 
+                    wrapperStyle={{ fontSize: '12px', color: '#fff' }}
+                  />
+                  <Bar 
+                    dataKey="totalAmount" 
+                    fill="url(#colorUv)" 
+                    radius={[10, 10, 0, 0]}
+                  >
+                    {purchaseData.map((entry, index) => (
+                      <Cell 
+                        key={`cell-${index}`} 
+                        fill={`url(#colorUv-${index})`}
+                      />
+                    ))}
+                    <LabelList 
+                      dataKey="totalAmount" 
+                      position="top" 
+                      fill="#fff"
+                      fontSize={12} 
+                      formatter={(value) => `$${value.toFixed(2)}`} 
+                      style={{ 
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)', 
+                        padding: '2px 4px', 
+                        borderRadius: '4px' 
+                      }}
+                    />
+                    <motion.path
+                      initial={{ width: 0 }}
+                      animate={{ width: '100%' }}
+                      transition={{ duration: 0.5 }}
+                    />
+                  </Bar>
+                  <defs>
+                    {purchaseData.map((_, index) => (
+                      <linearGradient key={`colorUv-${index}`} id={`colorUv-${index}`} x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor={COLORS[index % COLORS.length]} stopOpacity={0.8}/>
+                        <stop offset="95%" stopColor={COLORS[index % COLORS.length]} stopOpacity={0.3}/>
+                      </linearGradient>
+                    ))}
+                  </defs>
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           </motion.div>
         </div>
         
-        {/* Right section - 1/3 width */}
         <div className="lg:col-span-1 space-y-5">
-          {/* Segmentation Insights */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -278,7 +278,7 @@ const Analytics = () => {
                 <div className="flex justify-between items-center">
                   <div>
                     <p className="text-sm font-medium">Cluster Distribution</p>
-                    <p className="text-xs text-white/60 mt-1">Even distribution across {clusterData.length} clusters.</p>
+                    <p className="text-xs text-white/60 mt-1">Distribution across {segmentationData.cluster_summary.length} clusters.</p>
                   </div>
                   <ChevronRight size={16} className="text-white/60 group-hover:text-white" />
                 </div>
@@ -296,7 +296,6 @@ const Analytics = () => {
             </div>
           </motion.div>
           
-          {/* Recent Members */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -314,26 +313,15 @@ const Analytics = () => {
                     <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white">👤</div>
                     <span>{member.CustomerID}</span>
                   </div>
-                  <span>-</span> {/* Placeholder for Plan */}
-                  <span>-</span> {/* Placeholder for Joined */}
-                  <span className="text-green-500">-</span> {/* Placeholder for Status */}
-                  <span>...</span> {/* Placeholder for Actions */}
+                  <span>Cluster {segmentationData.customer_segments.find(c => c.CustomerID === member.CustomerID)?.Cluster_ID}</span>
+                  <span>{segmentationData.customer_segments.find(c => c.CustomerID === member.CustomerID)?.Recency} days ago</span>
+                  <span className="text-green-500">Active</span>
+                  <span>...</span>
                 </div>
               ))}
             </div>
           </motion.div>
         </div>
-      </div>
-      
-      {/* Additional content (empty for now, can add UpcomingClasses if needed) */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.4 }}
-        >
-          
-        </motion.div>
       </div>
     </div>
   );

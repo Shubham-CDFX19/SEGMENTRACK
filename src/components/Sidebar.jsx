@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
@@ -11,17 +10,16 @@ import {
   X,
   LogOut,
   BarChart3,
-  ShieldAlert,
-  ServerCog,
-  UserCheck,
   Database,
-  Monitor
 } from 'lucide-react';
+import { useData } from '../DataContext'; // Corrected import path
 
 const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
-  
+  const { updateSegmentationData } = useData();
+  const [selectedFile, setSelectedFile] = useState(null);
+
   const navigationItems = [
     { name: 'Dashboard', path: '/', icon: LayoutDashboard },
     { name: 'Customers', path: '/members', icon: Users },
@@ -29,14 +27,30 @@ const Sidebar = () => {
     { name: 'Finances', path: '/finances', icon: DollarSign },
   ];
 
-  const [selectedFile, setSelectedFile] = useState(null);
-
   const handleFileChange = (event) => {
     const file = event.target.files?.[0];
-    if (file && (file.type === 'application/json' || file.type === 'text/csv')) {
+    if (file && file.type === 'application/json') {
       setSelectedFile(file);
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = JSON.parse(e.target.result);
+          if (data.customer_segments && data.cluster_summary) {
+            updateSegmentationData(data);
+          } else {
+            alert('Invalid JSON format. Expected "customer_segments" and "cluster_summary" keys.');
+            setSelectedFile(null);
+            event.target.value = '';
+          }
+        } catch (error) {
+          alert('Error parsing JSON file.');
+          setSelectedFile(null);
+          event.target.value = '';
+        }
+      };
+      reader.readAsText(file);
     } else {
-      alert('Please upload a JSON or CSV file.');
+      alert('Please upload a JSON file.');
       event.target.value = '';
       setSelectedFile(null);
     }
@@ -45,7 +59,6 @@ const Sidebar = () => {
   return (
     <div className={`h-screen ${collapsed ? 'w-20' : 'w-64'} bg-gym-purpleSidebar fixed left-0 top-0 z-10 transition-all duration-300 ease-in-out`}>
       <div className="flex h-full flex-col">
-        {/* Sidebar header */}
         <div className="flex items-center justify-between p-4 border-b border-gym-purpleLight/20">
           {!collapsed && (
             <Link to="/" className="flex items-center gap-2">
@@ -57,7 +70,7 @@ const Sidebar = () => {
           )}
           {collapsed && (
             <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gym-purpleProgress mx-auto">
-              <Dumbbell className="h-5 w-5 text-white" />
+              <AudioWaveform className="h-5 w-5 text-white" />
             </div>
           )}
           <button
@@ -68,7 +81,6 @@ const Sidebar = () => {
           </button>
         </div>
 
-        {/* Search bar - similar to the image */}
         {!collapsed && (
           <div className="px-4 pt-4">
             <div className="relative">
@@ -86,26 +98,21 @@ const Sidebar = () => {
           </div>
         )}
 
-        {/* Menu Section Label */}
         {!collapsed && (
           <div className="px-4 pt-6 pb-2">
             <p className="text-xs uppercase text-gray-400 font-medium">Menu</p>
           </div>
         )}
 
-        {/* Navigation */}
         <div className="flex-1 overflow-y-auto py-4 px-3">
           <nav className="space-y-1">
             {navigationItems.map((item) => {
               const isActive = location.pathname === item.path;
-              
               return (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`sidebar-item ${isActive ? 'active' : ''} ${
-                    collapsed ? 'justify-center' : ''
-                  } animate-fade-in`}
+                  className={`sidebar-item ${isActive ? 'active' : ''} ${collapsed ? 'justify-center' : ''} animate-fade-in`}
                   style={{ animationDelay: `${navigationItems.indexOf(item) * 0.05}s` }}
                 >
                   <item.icon className={`h-5 w-5 ${isActive ? 'text-gym-purpleHighlight' : 'text-gray-400'}`} />
@@ -115,7 +122,6 @@ const Sidebar = () => {
             })}
           </nav>
 
-          {/* Manage Section */}
           {!collapsed && (
             <div className="mt-8">
               <div className="px-4 pb-2">
@@ -126,14 +132,14 @@ const Sidebar = () => {
                   <label className="flex items-center cursor-pointer">
                     <input
                       type="file"
-                      accept=".json,.csv"
+                      accept=".json"
                       onChange={handleFileChange}
                       className="hidden"
                       id="file-upload"
                     />
                     <span className="flex items-center">
                       <Database className="h-5 w-5 text-gray-400 mr-2" />
-                      <span>Upload File (JSON/CSV)</span>
+                      <span>Upload Segmentation Data</span>
                     </span>
                   </label>
                 </div>
@@ -147,8 +153,6 @@ const Sidebar = () => {
           )}
         </div>
 
-
-        {/* Sidebar footer */}
         <div className="border-t border-gym-purpleLight/20 p-4">
           <div className={`flex ${collapsed ? 'justify-center' : 'items-center'} gap-3`}>
             {!collapsed && (

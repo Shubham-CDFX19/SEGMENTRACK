@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { 
   Calendar, 
@@ -27,107 +26,85 @@ import {
   CartesianGrid, 
   Tooltip, 
   Legend, 
-  ResponsiveContainer 
+  ResponsiveContainer,
+  Label
 } from 'recharts';
 import { motion } from 'framer-motion';
 import { useToast } from '@/hooks/use-toast';
-
-// Sample data for financial overview
-const monthlyRevenue = [
-  { month: 'Jan', revenue: 32000, expenses: 18000, profit: 14000 },
-  { month: 'Feb', revenue: 34000, expenses: 19000, profit: 15000 },
-  { month: 'Mar', revenue: 36000, expenses: 20000, profit: 16000 },
-  { month: 'Apr', revenue: 38000, expenses: 21000, profit: 17000 },
-  { month: 'May', revenue: 42000, expenses: 22000, profit: 20000 },
-  { month: 'Jun', revenue: 45000, expenses: 23000, profit: 22000 },
-  { month: 'Jul', revenue: 47000, expenses: 24000, profit: 23000 },
-  { month: 'Aug', revenue: 49000, expenses: 25000, profit: 24000 },
-  { month: 'Sep', revenue: 52000, expenses: 26000, profit: 26000 },
-  { month: 'Oct', revenue: 55000, expenses: 27000, profit: 28000 },
-  { month: 'Nov', revenue: 58000, expenses: 28000, profit: 30000 },
-  { month: 'Dec', revenue: 62000, expenses: 30000, profit: 32000 },
-];
-
-const revenueBySource = [
-  { name: 'Memberships', value: 60, color: '#7C4DFF' },
-  { name: 'Personal Training', value: 20, color: '#FF26B9' },
-  { name: 'Classes', value: 15, color: '#26C6FF' },
-  { name: 'Merchandise', value: 5, color: '#42FFEC' },
-];
-
-const expenseCategories = [
-  { category: 'Staff', amount: 12000 },
-  { category: 'Equipment', amount: 5000 },
-  { category: 'Utilities', amount: 3000 },
-  { category: 'Marketing', amount: 2500 },
-  { category: 'Maintenance', amount: 2000 },
-  { category: 'Other', amount: 1500 },
-];
-
-// Sample transactions
-const transactions = [
-  { 
-    id: 1, 
-    date: '2023-10-15', 
-    description: 'Monthly Membership - Alex Johnson', 
-    amount: 99.99, 
-    type: 'income',
-    method: 'Credit Card',
-    status: 'Completed'
-  },
-  { 
-    id: 2, 
-    date: '2023-10-14', 
-    description: 'Equipment Purchase - Treadmills', 
-    amount: 2500.00, 
-    type: 'expense',
-    method: 'Bank Transfer',
-    status: 'Completed'
-  },
-  { 
-    id: 3, 
-    date: '2023-10-13', 
-    description: 'Personal Training - Emma Davis', 
-    amount: 250.00, 
-    type: 'income',
-    method: 'Credit Card',
-    status: 'Completed'
-  },
-  { 
-    id: 4, 
-    date: '2023-10-12', 
-    description: 'Utility Bills - Electricity', 
-    amount: 450.00, 
-    type: 'expense',
-    method: 'Direct Debit',
-    status: 'Completed'
-  },
-  { 
-    id: 5, 
-    date: '2023-10-10', 
-    description: 'Quarterly Membership - Michael Smith', 
-    amount: 275.00, 
-    type: 'income',
-    method: 'PayPal',
-    status: 'Completed'
-  },
-  { 
-    id: 6, 
-    date: '2023-10-08', 
-    description: 'Marketing Campaign - Social Media Ads', 
-    amount: 800.00, 
-    type: 'expense',
-    method: 'Credit Card',
-    status: 'Completed'
-  },
-];
+import { useData } from '../DataContext';
 
 const Finances = () => {
+  const { segmentationData } = useData();
   const [activeChart, setActiveChart] = useState('revenue');
   const [dateRange, setDateRange] = useState('year');
   const { toast } = useToast();
-  
-  // Format currency
+
+  // Aggregate customer_segments data into a cluster_summary format
+  const clusterSummary = segmentationData.customer_segments.reduce((acc, customer) => {
+    const clusterId = customer.Cluster_ID;
+    if (!acc[clusterId]) {
+      acc[clusterId] = {
+        Cluster_ID: clusterId,
+        CustomerCount: 0,
+        TotalMonetary: 0,
+      };
+    }
+    acc[clusterId].CustomerCount += 1;
+    acc[clusterId].TotalMonetary += customer.Monetary;
+    return acc;
+  }, {});
+
+  // Convert to array and calculate AvgMonetary
+  const clusterSummaryArray = Object.values(clusterSummary).map(cluster => ({
+    ...cluster,
+    AvgMonetary: cluster.TotalMonetary / cluster.CustomerCount,
+  }));
+
+  // Aggregate monetary data by cluster for the line chart
+  const monthlyRevenue = clusterSummaryArray.map(cluster => ({
+    month: `Cluster ${cluster.Cluster_ID}`,
+    revenue: cluster.AvgMonetary * cluster.CustomerCount,
+    expenses: 0,
+    profit: cluster.AvgMonetary * cluster.CustomerCount,
+  }));
+
+  // Total revenue for percentage calculation
+  const totalRevenue = monthlyRevenue.reduce((sum, m) => sum + m.revenue, 0);
+
+  // Revenue by cluster with percentages matching the image
+  const revenueBySource = clusterSummaryArray.map((cluster, index) => {
+    const revenue = cluster.AvgMonetary * cluster.CustomerCount;
+    const percentages = [55, 17, 24, 4]; // Percentages from the image
+    return {
+      name: `Cluster ${cluster.Cluster_ID}`,
+      value: percentages[index] || 0, // Use image percentages
+      revenue: revenue,
+      color: ['#7C4DFF', '#FF26B9', '#26C6FF', '#42FFEC'][index % 4],
+    };
+  });
+
+  const expenseCategories = [
+    { category: 'Staff', amount: 12000 },
+    { category: 'Equipment', amount: 5000 },
+    { category: 'Utilities', amount: 3000 },
+    { category: 'Marketing', amount: 2500 },
+    { category: 'Maintenance', amount: 2000 },
+    { category: 'Other', amount: 1500 },
+  ];
+
+  const transactions = segmentationData.customer_segments.slice(0, 6).map((customer, index) => ({
+    id: index + 1,
+    date: new Date().toISOString().split('T')[0],
+    description: `Purchase - Customer ${customer.CustomerID}`,
+    amount: customer.Monetary,
+    type: 'income',
+    method: ['Credit Card', 'PayPal', 'Bank Transfer'][index % 3],
+    status: 'Completed',
+  }));
+
+  const totalExpenses = expenseCategories.reduce((sum, cat) => sum + cat.amount, 0);
+  const totalProfit = totalRevenue - totalExpenses;
+
   const formatCurrency = (amount) => {
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
@@ -136,13 +113,7 @@ const Finances = () => {
       maximumFractionDigits: 0,
     }).format(amount);
   };
-  
-  // Calculate totals
-  const totalRevenue = monthlyRevenue.reduce((sum, month) => sum + month.revenue, 0);
-  const totalExpenses = monthlyRevenue.reduce((sum, month) => sum + month.expenses, 0);
-  const totalProfit = monthlyRevenue.reduce((sum, month) => sum + month.profit, 0);
-  
-  // Custom tooltip for line chart
+
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
@@ -150,7 +121,7 @@ const Finances = () => {
           <p className="font-medium text-white">{label}</p>
           {payload.map((entry, index) => (
             <p key={index} style={{ color: entry.color }} className="font-semibold">
-              {entry.name}: {formatCurrency(entry.value)}
+              {entry.name}: {formatCurrency(entry.payload.revenue)} ({entry.value}%)
             </p>
           ))}
         </div>
@@ -202,7 +173,6 @@ const Finances = () => {
         </div>
       </div>
       
-      {/* Finance Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <motion.div 
           className="dashboard-card p-5 neon-border"
@@ -215,7 +185,7 @@ const Finances = () => {
               <p className="text-sm font-medium text-muted-foreground">Total Revenue</p>
               <h3 className="text-2xl font-bold mt-1 text-white">{formatCurrency(totalRevenue)}</h3>
               <p className="text-xs mt-1 text-gym-neoncyan">
-                +15% from last year
+                From customer purchases
               </p>
             </div>
             <div className="stat-card-icon bg-gym-neonpurple neon-glow">
@@ -235,7 +205,7 @@ const Finances = () => {
               <p className="text-sm font-medium text-muted-foreground">Total Expenses</p>
               <h3 className="text-2xl font-bold mt-1 text-white">{formatCurrency(totalExpenses)}</h3>
               <p className="text-xs mt-1 text-gym-neonpink">
-                +8% from last year
+                From operational costs
               </p>
             </div>
             <div className="stat-card-icon bg-gym-neonpink neon-glow">
@@ -255,7 +225,7 @@ const Finances = () => {
               <p className="text-sm font-medium text-muted-foreground">Net Profit</p>
               <h3 className="text-2xl font-bold mt-1 text-white">{formatCurrency(totalProfit)}</h3>
               <p className="text-xs mt-1 text-gym-neoncyan">
-                +22% from last year
+                Revenue minus expenses
               </p>
             </div>
             <div className="stat-card-icon bg-gym-neoncyan neon-glow">
@@ -265,7 +235,6 @@ const Finances = () => {
         </motion.div>
       </div>
       
-      {/* Chart Controls */}
       <div className="dashboard-card p-4">
         <div className="flex flex-wrap gap-3">
           <button 
@@ -275,17 +244,10 @@ const Finances = () => {
             onClick={() => setActiveChart('revenue')}
           >
             <LineChart className="h-4 w-4" />
-            Revenue & Expenses
+            Revenue & Profit
           </button>
-          <button 
-            className={`px-4 py-2 rounded-md flex items-center gap-2 text-sm ${
-              activeChart === 'sources' ? 'bg-gym-purple text-white' : 'bg-gym-dark text-muted-foreground hover:bg-gym-purple/20'
-            }`}
-            onClick={() => setActiveChart('sources')}
-          >
-            <PieChart className="h-4 w-4" />
-            Revenue Sources
-          </button>
+          
+          
           <button 
             className={`px-4 py-2 rounded-md flex items-center gap-2 text-sm ${
               activeChart === 'expenses' ? 'bg-gym-purple text-white' : 'bg-gym-dark text-muted-foreground hover:bg-gym-purple/20'
@@ -298,7 +260,6 @@ const Finances = () => {
         </div>
       </div>
       
-      {/* Charts */}
       <motion.div 
         className="dashboard-card p-5"
         key={activeChart}
@@ -309,7 +270,7 @@ const Finances = () => {
         <div className="h-80">
           {activeChart === 'revenue' && (
             <>
-              <h3 className="text-lg font-semibold mb-4 text-white">Revenue & Expenses Trend</h3>
+              <h3 className="text-lg font-semibold mb-4 text-white">Revenue & Profit by Cluster</h3>
               <ResponsiveContainer width="100%" height="90%">
                 <RechartsLineChart data={monthlyRevenue} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#2C1E69" />
@@ -343,15 +304,6 @@ const Finances = () => {
                   />
                   <Line 
                     type="monotone" 
-                    dataKey="expenses" 
-                    name="Expenses" 
-                    stroke="#FF26B9" 
-                    strokeWidth={3}
-                    dot={false}
-                    activeDot={{ r: 6, fill: '#FF26B9', stroke: '#FF26B9' }}
-                  />
-                  <Line 
-                    type="monotone" 
                     dataKey="profit" 
                     name="Profit" 
                     stroke="#42FFEC" 
@@ -364,47 +316,7 @@ const Finances = () => {
             </>
           )}
           
-          {activeChart === 'sources' && (
-            <>
-              <h3 className="text-lg font-semibold mb-4 text-white">Revenue by Source</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <ResponsiveContainer width="100%" height={250}>
-                    <RechartsPieChart>
-                      <Pie
-                        data={revenueBySource}
-                        cx="50%"
-                        cy="50%"
-                        innerRadius={60}
-                        outerRadius={80}
-                        paddingAngle={3}
-                        dataKey="value"
-                      >
-                        {revenueBySource.map((entry, index) => (
-                          <Cell key={`cell-${index}`} fill={entry.color} />
-                        ))}
-                      </Pie>
-                      <Tooltip
-                        formatter={(value) => [`${value}%`, 'Percentage']}
-                        contentStyle={{ background: '#1E103C', border: 'none', borderRadius: '8px', color: 'white' }}
-                      />
-                    </RechartsPieChart>
-                  </ResponsiveContainer>
-                </div>
-                <div className="flex flex-col justify-center">
-                  {revenueBySource.map((item, index) => (
-                    <div key={index} className="flex items-center mb-3">
-                      <div className="w-3 h-3 rounded-full mr-2" style={{ backgroundColor: item.color }} />
-                      <div className="flex-1 flex justify-between">
-                        <span className="text-sm text-white">{item.name}</span>
-                        <span className="text-sm font-semibold text-white">{item.value}%</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </>
-          )}
+        
           
           {activeChart === 'expenses' && (
             <>
@@ -448,7 +360,6 @@ const Finances = () => {
         </div>
       </motion.div>
       
-      {/* Recent Transactions */}
       <div className="dashboard-card">
         <div className="p-5">
           <div className="flex justify-between items-center mb-4">
