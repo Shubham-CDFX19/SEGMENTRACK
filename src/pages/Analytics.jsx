@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { 
   Users, 
-  Dumbbell, 
+  ShoppingBag, 
   Timer,
   Award,
   Calendar, 
@@ -101,7 +101,7 @@ const Analytics = () => {
           title="Weekly Purchases" 
           value={weeklyPurchases} 
           subtitle="Purchases in last 7 days"
-          icon={Dumbbell}
+          icon={ShoppingBag}
           color="blue"
           percent={segmentationData.customer_segments.length > 0 ? (weeklyPurchases / segmentationData.customer_segments.length * 100).toFixed(0) : 0}
         />
